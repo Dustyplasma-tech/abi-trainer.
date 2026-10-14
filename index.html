@@ -1,0 +1,1285 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4a2bc4"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Abi-Trainer"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Abi-Trainer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: eine Spalte wie in einer Lern-App. Violetter Kopfbereich mit Maskottchen Kobi, dicke 3D-Knöpfe, Themen als Kacheln mit Fortschrittsring, XP, Level und Abzeichen. */
+:root{
+  --bg:#f5f2ff; --dot:#ddd5fa; --paper:#ffffff; --ink:#1d1647; --muted:#625b8e; --line:#e1dbf8;
+  --pri:#6b46f5; --pri-d:#4524bf; --pri-ink:#ffffff; --soft:#eee9ff;
+  --math:#7a4dff; --phys:#0b84d4;
+  --gold:#ffc42e; --gold-d:#d19200; --gold-ink:#3a2900;
+  --ok:#1b9e63; --ok-d:#11744a; --ok-soft:#ddf5e9;
+  --no:#e5484d; --no-d:#ae2c31; --no-soft:#fde8e8;
+  --warn:#b86e00; --warn-soft:#fff0d1;
+  --hero:#4a2bc4; --hero-2:#6b46f5; --hero-ink:#ffffff;
+  --kobi:#ffd23f; --kobi-d:#ff9a1f; --eye:#1d1647;
+  --f-d:'Fredoka',system-ui,sans-serif; --f-b:'Nunito',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#150f30; --dot:#241c4d; --paper:#211a47; --ink:#f2eeff; --muted:#aca5d9; --line:#372e69;
+  --pri:#a38bff; --pri-d:#6d4fe0; --pri-ink:#150f30; --soft:#2c2460;
+  --math:#b19cff; --phys:#62c1ff;
+  --ok:#4fd79c; --ok-d:#2a9d6d; --ok-soft:#133a2c;
+  --no:#ff7f83; --no-d:#c24c51; --no-soft:#3d1c27;
+  --warn:#f3bd55; --warn-soft:#3b2e10;
+  --hero:#34229a; --hero-2:#4a2bc4; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#150f30; --dot:#241c4d; --paper:#211a47; --ink:#f2eeff; --muted:#aca5d9; --line:#372e69;
+  --pri:#a38bff; --pri-d:#6d4fe0; --pri-ink:#150f30; --soft:#2c2460;
+  --math:#b19cff; --phys:#62c1ff;
+  --ok:#4fd79c; --ok-d:#2a9d6d; --ok-soft:#133a2c;
+  --no:#ff7f83; --no-d:#c24c51; --no-soft:#3d1c27;
+  --warn:#f3bd55; --warn-soft:#3b2e10;
+  --hero:#34229a; --hero-2:#4a2bc4; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background-color:var(--bg);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:24px 24px;color:var(--ink);font:600 16px/1.5 var(--f-b);padding-inline:16px;padding-block:0 104px;min-height:100vh}
+html.lock body{overflow:hidden}
+button{font:inherit;color:inherit}
+a{color:var(--pri)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:720px;margin:0 auto;min-width:0}
+h2,h3{font-family:var(--f-d);margin:0;text-wrap:balance;font-weight:600}
+h2{font-size:1.45rem;line-height:1.2}
+h3{font-size:1.15rem}
+p{margin:0}
+.muted{color:var(--muted)}
+.small{font-size:.9rem}
+sup,sub{font-size:.7em;line-height:0}
+.stack{display:flex;flex-direction:column;gap:16px}
+
+/* Kopf */
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-block:14px 12px}
+.brand{display:flex;align-items:center;gap:8px;font:700 1.35rem/1 var(--f-d);letter-spacing:.2px}
+.chips{display:flex;gap:8px}
+.pill{display:inline-flex;align-items:center;gap:5px;font:700 1rem/1 var(--f-d);background:var(--paper);border:2px solid var(--line);border-radius:999px;padding:6px 11px 6px 8px;font-variant-numeric:tabular-nums}
+.pill svg{width:18px;height:18px}
+.pill.fire svg{fill:#ff7a1a}.pill.bolt svg{fill:var(--gold)}
+
+/* Karten */
+.card{background:var(--paper);border:2px solid var(--line);border-radius:22px;padding:18px;min-width:0}
+.eyebrow{font:700 .78rem/1 var(--f-d);text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:10px;display:block}
+.hero{background:var(--hero);color:var(--hero-ink);border-radius:26px;padding:20px 18px 18px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 10px;align-items:end;box-shadow:0 6px 0 rgba(0,0,0,.18)}
+.hero h2{font-size:1.7rem}
+.hero .hl{display:inline-block;background:var(--gold);color:var(--gold-ink);font:700 .8rem/1 var(--f-d);padding:5px 10px;border-radius:999px;margin-bottom:8px}
+.hero .ttl{opacity:.9;margin:2px 0 12px}
+.xpbar{height:14px;border-radius:999px;background:rgba(255,255,255,.22);overflow:hidden}
+.xpbar i{display:block;height:100%;background:var(--gold);border-radius:999px;min-width:14px}
+.hero small{display:block;margin-top:6px;opacity:.85;font-weight:700}
+.hero-r{display:flex;flex-direction:column;align-items:center;gap:6px;max-width:150px}
+.bubble{position:relative;background:#fff;color:#1d1647;border-radius:16px;padding:9px 12px;font-size:.88rem;line-height:1.35;font-weight:700}
+.bubble:after{content:"";position:absolute;left:50%;bottom:-7px;width:14px;height:14px;background:#fff;transform:translateX(-50%) rotate(45deg);border-radius:3px}
+.hero-r svg{margin-top:4px}
+.hero-l{grid-column:1;min-width:0}
+@media (max-width:420px){.hero{grid-template-columns:1fr}.hero-r{flex-direction:row-reverse;max-width:none;align-items:center;margin-top:6px}.bubble:after{left:auto;right:-7px;bottom:auto;top:50%;transform:translateY(-50%) rotate(45deg)}}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;text-align:center}
+.week div{display:flex;flex-direction:column;align-items:center;gap:5px;font:600 .78rem var(--f-d);color:var(--muted)}
+.week i{width:34px;height:34px;border-radius:50%;border:2.5px dashed var(--line);display:grid;place-items:center}
+.week i svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
+.week .done i{background:var(--pri);border:2.5px solid var(--pri)}
+.week .goal i{background:var(--gold);border-color:var(--gold)}.week .goal i svg{stroke:var(--gold-ink)}
+.week .now{color:var(--ink)}.week .now i{border-style:solid;border-color:var(--pri)}
+.bar{height:16px;border-radius:999px;background:var(--soft);overflow:hidden;min-width:0;flex:1}
+.bar i{display:block;height:100%;background:var(--pri);border-radius:999px;min-width:0}
+.bar.g i{background:var(--gold)}
+
+/* Knöpfe */
+.btn{font:600 1.05rem/1.2 var(--f-d);padding:13px 20px;min-height:52px;border-radius:16px;border:0;background:var(--pri);color:var(--pri-ink);box-shadow:0 4px 0 var(--pri-d);cursor:pointer;text-align:center;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;letter-spacing:.2px}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--pri-d)}
+.btn.wide{width:100%}
+.btn.ghost{background:var(--paper);color:var(--pri);border:2px solid var(--line);box-shadow:0 4px 0 var(--line)}
+.btn.ghost:active{box-shadow:0 1px 0 var(--line)}
+.btn.gold{background:var(--gold);color:var(--gold-ink);box-shadow:0 4px 0 var(--gold-d)}
+.btn.gold:active{box-shadow:0 1px 0 var(--gold-d)}
+.btn.no{background:var(--paper);color:var(--no);border:2px solid var(--no);box-shadow:0 4px 0 var(--no-d)}
+.btn.sm{min-height:42px;padding:8px 14px;font-size:.95rem;border-radius:13px}
+.btn:disabled{opacity:.5}
+.row2{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.link{background:none;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;padding:10px 4px;min-height:44px;font-weight:700}
+.tag{display:inline-block;font:700 .75rem/1 var(--f-d);letter-spacing:.06em;text-transform:uppercase;padding:5px 9px;border-radius:999px;background:var(--soft)}
+.tag.sM{color:var(--math)}.tag.sP{color:var(--phys)}
+
+/* Themen-Kacheln */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px}
+.tile{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;padding:14px 10px 12px;background:var(--paper);border:2px solid var(--line);border-radius:20px;box-shadow:0 4px 0 var(--line);cursor:pointer;min-width:0}
+.tile:active{transform:translateY(3px);box-shadow:0 1px 0 var(--line)}
+.ring{position:relative;width:64px;height:64px;flex:none}
+.ring svg{width:64px;height:64px}
+.ring circle{fill:none;stroke-width:5.5}
+.ring .rb{stroke:var(--soft)}
+.ring .rf{stroke-linecap:round}
+.ring .gl{position:absolute;inset:0;display:grid;place-items:center;font:700 1.12rem/1 var(--f-d);letter-spacing:-.3px}
+.tile.sM .gl{color:var(--math)}.tile.sP .gl{color:var(--phys)}
+.tile .tn{font:600 .92rem/1.25 var(--f-d);text-wrap:balance;overflow-wrap:break-word;hyphens:manual;max-width:100%}
+.tile .tm{font-size:.78rem;color:var(--muted);font-weight:700}
+.rf.st-schwach{stroke:var(--no)}.rf.st-ueben{stroke:var(--gold)}.rf.st-sicher{stroke:var(--ok)}.rf.st-neu{stroke:var(--line)}
+.chip{display:inline-block;font:700 .74rem/1 var(--f-d);padding:5px 9px;border-radius:999px;background:var(--soft);color:var(--muted)}
+.chip.st-schwach{background:var(--no-soft);color:var(--no)}.chip.st-ueben{background:var(--warn-soft);color:var(--warn)}.chip.st-sicher{background:var(--ok-soft);color:var(--ok)}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg button{padding:9px 16px;border:2px solid var(--line);background:var(--paper);border-radius:999px;cursor:pointer;font:600 1rem var(--f-d);min-height:44px}
+.seg button[aria-pressed="true"]{background:var(--pri);color:var(--pri-ink);border-color:var(--pri)}
+.group-h{display:flex;align-items:baseline;gap:10px;margin-top:4px}
+
+/* Übung */
+.ov{position:fixed;inset:0;z-index:20;overflow-y:auto;background-color:var(--bg);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:24px 24px;padding:calc(12px + env(safe-area-inset-top,0px)) 16px calc(28px + env(safe-area-inset-bottom,0px))}
+.stop{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.x{width:46px;height:46px;border:2px solid var(--line);background:var(--paper);border-radius:14px;cursor:pointer;font:700 1.15rem var(--f-d);flex:none;color:var(--muted)}
+.cnt{font:700 .95rem var(--f-d);color:var(--muted);flex:none;font-variant-numeric:tabular-nums}
+.combo{display:inline-flex;align-items:center;gap:4px;font:700 1rem var(--f-d);color:#ff7a1a;flex:none}
+.combo svg{width:18px;height:18px;fill:#ff7a1a}
+.tagrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.tagrow .tn{font:600 1rem var(--f-d)}
+.tagrow .kind{margin-left:auto;font-size:.82rem;color:var(--muted);font-weight:700}
+.qcard{background:var(--paper);border:2px solid var(--line);border-top:8px solid var(--math);border-radius:22px;padding:20px 18px;font-size:1.2rem;line-height:1.6;overflow-wrap:anywhere;font-weight:700;box-shadow:0 5px 0 var(--line)}
+.qcard.sP{border-top-color:var(--phys)}
+.qcard.card-a{font-size:1.08rem;background:var(--soft);border-top-width:2px;box-shadow:none;font-weight:600}
+.qlab{display:block;font:700 .75rem var(--f-d);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.answer-row{display:flex;gap:10px;align-items:stretch;margin-top:16px}
+.in{flex:1;min-width:0;font:600 1.5rem var(--f-d);padding:11px 16px;border:3px solid var(--line);border-radius:16px;background:var(--paper);color:var(--ink);font-variant-numeric:tabular-nums}
+.in:focus{outline:none;border-color:var(--pri)}
+.unit{align-self:center;font:600 1.05rem var(--f-d);color:var(--muted)}
+.keys{display:flex;gap:8px;margin-top:10px}
+.keys button{min-width:52px;min-height:46px;border:2px solid var(--line);background:var(--paper);border-radius:12px;font:700 1.2rem var(--f-d);cursor:pointer;box-shadow:0 3px 0 var(--line)}
+.keys button:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line)}
+.err{color:var(--no);min-height:1.5em;font-size:.92rem;margin-top:6px;font-weight:700}
+.opts{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.opt{display:flex;gap:12px;align-items:center;padding:13px 14px;border:2px solid var(--line);background:var(--paper);border-radius:16px;text-align:left;cursor:pointer;font-size:1.05rem;min-height:56px;box-shadow:0 4px 0 var(--line);font-weight:700}
+.opt:active:not(:disabled){transform:translateY(3px);box-shadow:0 1px 0 var(--line)}
+.opt b{flex:none;width:30px;height:30px;border-radius:9px;background:var(--soft);display:grid;place-items:center;font:700 .9rem var(--f-d);color:var(--muted)}
+.opt.right{background:var(--ok-soft);border-color:var(--ok);box-shadow:0 4px 0 var(--ok-d)}
+.opt.wrong{background:var(--no-soft);border-color:var(--no);box-shadow:0 4px 0 var(--no-d)}
+.opt:disabled{cursor:default}
+.fb{margin-top:16px;padding:14px 16px;border-radius:20px;border:2px solid}
+.fb.ok{background:var(--ok-soft);border-color:var(--ok)}
+.fb.no{background:var(--no-soft);border-color:var(--no)}
+.fbh{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.fbh .h{font:700 1.25rem var(--f-d);display:block}
+.fb.ok .h{color:var(--ok)}.fb.no .h{color:var(--no)}
+.xp{display:inline-block;background:var(--gold);color:var(--gold-ink);font:700 .85rem/1 var(--f-d);padding:4px 9px;border-radius:999px;margin-top:3px}
+.strike{text-decoration:line-through;text-decoration-color:var(--no);text-decoration-thickness:3px;color:var(--no);font-family:var(--f-d);font-weight:600}
+.mk{background:linear-gradient(transparent 52%,var(--gold) 52%);padding:0 .25em;color:var(--ink);font-family:var(--f-d);font-weight:700}
+.ex{margin-top:8px;font-size:1rem;font-weight:600}
+.tip{margin-top:10px;font-size:.92rem;color:var(--muted);border-top:2px dashed var(--line);padding-top:8px}
+.vec{display:inline-flex;flex-direction:column;text-align:center;border-left:2px solid currentColor;border-right:2px solid currentColor;padding:0 .35em;border-radius:.3em;line-height:1.2;vertical-align:middle;margin:0 .15em;font-size:.95em}
+.vec i{font-style:normal}
+.big{font:700 3.2rem/1 var(--f-d)}
+.res{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:2px dashed var(--line);align-items:center}
+.res:last-child{border:0}
+.ref{padding:12px 0;border-bottom:2px dashed var(--line);font-weight:600}
+.ref:last-child{border:0}
+.ref b{display:block;margin-bottom:4px;font-family:var(--f-d);font-weight:600;font-size:1.05rem}
+.sumtop{text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+
+/* Navigation */
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--paper);border-top:2px solid var(--line);padding:6px 10px calc(6px + env(safe-area-inset-bottom,0px))}
+.nav>div{max-width:720px;margin:0 auto;display:grid;grid-template-columns:repeat(var(--n,4),1fr);gap:6px}
+.nav button{background:none;border:0;border-radius:14px;padding:6px 4px;display:flex;flex-direction:column;align-items:center;gap:2px;font:600 .8rem var(--f-d);color:var(--muted);cursor:pointer;min-height:54px}
+.nav button[aria-current="page"]{color:var(--pri);background:var(--soft)}
+.nav svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+/* Ich */
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+.nums div{border:2px solid var(--line);border-radius:18px;padding:12px 14px;background:var(--paper)}
+.nums b{display:block;font:700 1.7rem/1.1 var(--f-d)}
+.nums span{font-size:.85rem;color:var(--muted);font-weight:700}
+.bars{display:flex;gap:5px;align-items:flex-end;height:96px;margin-top:6px}
+.bars div{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;height:100%;min-width:0}
+.bars b{display:block;background:var(--pri);min-height:4px;border-radius:6px 6px 2px 2px}
+.bars b.zero{background:var(--line)}
+.bars span{font-size:.66rem;color:var(--muted);text-align:center;margin-top:3px;font-weight:700}
+.badges{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:12px}
+.bd{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.bd .g{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;font:700 1.1rem var(--f-d);background:var(--gold);color:var(--gold-ink);box-shadow:0 4px 0 var(--gold-d);letter-spacing:-.5px}
+.bd.lock .g{background:var(--soft);color:var(--muted);box-shadow:0 4px 0 var(--line)}
+.bd b{font:600 .85rem/1.2 var(--f-d)}
+.bd.lock{opacity:.8}
+.bd small{font-size:.74rem;color:var(--muted);line-height:1.25;font-weight:700}
+.name-in{width:100%;font:600 1.1rem var(--f-d);padding:10px 14px;border:3px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink)}
+.name-in:focus{outline:none;border-color:var(--pri)}
+textarea.code{width:100%;min-height:96px;font:600 .75rem/1.4 ui-monospace,monospace;border:2px solid var(--line);border-radius:12px;padding:10px;background:var(--paper);color:var(--ink);resize:vertical}
+input[type=file]{font:inherit;max-width:100%;color:var(--muted);margin-top:4px}input[type=file]::file-selector-button{font:600 .9rem var(--f-d);padding:8px 14px;border-radius:12px;border:2px solid var(--line);background:var(--paper);color:var(--pri);margin-right:10px;cursor:pointer}
+details.card summary{cursor:pointer;font:600 1.05rem var(--f-d);min-height:28px}
+.links{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.ch{padding:14px 0;border-bottom:2px dashed var(--line);display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px}
+.ch:last-child{border:0}
+.ch .av{grid-row:1 / span 3;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font:700 1.25rem var(--f-d);color:#fff;background:var(--math)}
+.ch .av.P{background:var(--phys)}.ch .av.B{background:var(--pri)}
+.ch b{font:600 1.05rem var(--f-d)}
+.sync{display:flex;gap:10px;align-items:flex-start}
+.dot{flex:none;width:14px;height:14px;border-radius:50%;margin-top:5px;background:var(--line)}
+.dot.ok{background:var(--ok)}.dot.err{background:var(--no)}.dot.sync{background:var(--gold)}
+.steps{margin:0;padding-left:1.2em}.steps li{margin:4px 0}
+
+/* Spaß */
+.cf{position:fixed;left:50%;top:34%;width:10px;height:10px;border-radius:3px;pointer-events:none;z-index:80;animation:cf .95s cubic-bezier(.2,.7,.3,1) forwards}
+@keyframes cf{to{transform:translate(var(--dx),var(--dy)) rotate(var(--r));opacity:0}}
+.toast{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top,0px));z-index:90;transform:translate(-50%,-140%);transition:transform .3s cubic-bezier(.2,.9,.3,1.2);background:var(--ink);color:var(--bg);border-radius:18px;padding:10px 16px 10px 10px;display:flex;gap:12px;align-items:center;max-width:calc(100% - 32px);min-width:220px;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+.toast.show{transform:translate(-50%,0)}
+.toast:empty{display:none}
+.toast .tg{flex:none;width:44px;height:44px;border-radius:50%;background:var(--gold);color:var(--gold-ink);display:grid;place-items:center;font:700 1.05rem var(--f-d)}
+.toast b{font:600 1.05rem var(--f-d)}.toast small{opacity:.8;font-weight:700}
+.kobi .blink{transform-origin:center;transform-box:fill-box;animation:blink 5s infinite}
+@keyframes blink{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+.kobi.bob{animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-4px)}}
+@keyframes pop{0%{transform:scale(.92);opacity:.4}60%{transform:scale(1.03)}100%{transform:scale(1);opacity:1}}
+.pop{animation:pop .28s ease-out}
+@media (prefers-reduced-motion:reduce){.kobi .blink,.kobi.bob,.pop{animation:none}.toast{transition:none}}
+.lock #app,.lock #nav{display:none}
+.gate{min-height:100vh;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:20px;background:linear-gradient(160deg,#4a2bc4,#6b46f5 60%,#8f6bff)}
+.gate-box{background:var(--card,#fff);color:var(--ink,#222);border-radius:28px;padding:28px 22px;max-width:380px;width:100%;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,.3)}
+.gate-box h1{font-family:'Fredoka',sans-serif;margin:6px 0 2px;font-size:1.8rem}
+.gate .err{color:#d33;min-height:1.4em;margin:8px 0;font-weight:700;font-size:.95rem}
+.gate .answer-row{display:flex;gap:8px;align-items:center}.gate .in{flex:1;min-width:0}
+</style>
+</head><body>
+<div id="gate"></div>
+<div id="app" class="wrap"><div id="main"></div></div>
+<div id="nav" class="nav"></div>
+<div id="ov"></div>
+<div id="toast" class="toast" aria-live="polite"></div>
+
+<script>
+/* ===== Hilfsfunktionen ===== */
+const R=(a,b)=>Math.floor(Math.random()*(b-a+1))+a;
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const sh=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+const rd=(x,d=0)=>{const f=Math.pow(10,d);return Math.round(x*f)/f;};
+const fmt=(x,d=3)=>String(rd(x,d)).replace('.',',').replace('-','−');
+const N=n=>String(n).replace('-','−');
+const ab=Math.abs;
+const sup=x=>`<sup>${x}</sup>`;
+const sub=x=>`<sub>${x}</sub>`;
+const DEG=Math.PI/180;
+function poly(terms){let s='';terms.forEach(([c,e])=>{if(c===0)return;const a=ab(c);let body;if(e===0)body=String(a);else body=(a===1?'':String(a))+'x'+(e===1?'':sup(e));if(!s)s=(c<0?'−':'')+body;else s+=` ${c<0?'−':'+'} ${body}`;});return s||'0';}
+function mcq(q,right,wrongs,ex){const opts=sh([right,...wrongs]);return {q,mc:opts,c:opts.indexOf(right),ex};}
+function vec(a,b,c){return `<span class="vec"><i>${N(a)}</i><i>${N(b)}</i><i>${N(c)}</i></span>`;}
+const GN=9.81;
+
+/* ===== Generatoren: jede Funktion liefert eine neue Zufallsaufgabe ===== */
+const GEN={};
+
+/* ---------- MATHE ---------- */
+GEN.m1=()=>{const t=R(0,3);
+ if(t===0){let b,m,n,k,e;do{b=pick([2,3,5]);m=R(2,5);n=R(2,5);k=R(1,m+n-1);e=m+n-k;}while(Math.pow(b,e)>1000);
+  return {q:`Berechne: ${b}${sup(m)} · ${b}${sup(n)} : ${b}${sup(k)}`,a:Math.pow(b,e),tol:0.001,ex:`Gleiche Basis: Beim Malnehmen Exponenten addieren (${m}+${n}=${m+n}), beim Teilen subtrahieren (${m+n}−${k}=${e}). Also ${b}${sup(e)} = ${Math.pow(b,e)}.`};}
+ if(t===1){const b=pick([2,3,4,5,10]),n=R(1,3);const a=1/Math.pow(b,n);
+  return {q:`Berechne ${b}${sup('−'+n)} (als Bruch oder Dezimalzahl).`,a,tol:a*0.02,ex:`Ein negativer Exponent bedeutet Kehrwert: ${b}${sup('−'+n)} = 1/${b}${sup(n)} = 1/${Math.pow(b,n)} ≈ ${fmt(a,4)}.`};}
+ if(t===2){const x=pick([4,9,16,25]);const r=Math.sqrt(x);
+  return {q:`Berechne ${x}${sup('3/2')}`,a:Math.pow(x,1.5),tol:0.001,ex:`x${sup('3/2')} = (√x)³. Hier √${x} = ${r}, und ${r}³ = ${Math.pow(r,3)}.`};}
+ const [p,q]=pick([[2,8],[3,12],[5,20],[2,50],[8,18],[12,27],[18,32]]);
+ return {q:`Berechne: √${p} · √${q}`,a:Math.sqrt(p*q),tol:0.001,ex:`√a · √b = √(a·b). Also √${p*q} = ${Math.sqrt(p*q)}.`};};
+
+GEN.m2=()=>{const t=R(0,3);const b=pick([2,3,4,5,10]);let k=R(1,4);while(Math.pow(b,k)>10000)k--;const B=Math.pow(b,k);
+ const L=(arg)=>b===10?`lg(${arg})`:`log${sub(b)}(${arg})`;
+ if(t===0)return {q:`Berechne ${L(B)}`,a:k,tol:0.001,ex:`${L(B)} fragt: „${b} hoch wie viel ergibt ${B}?“ Antwort: ${b}${sup(k)} = ${B}, also ${k}.`};
+ if(t===1)return {q:`Berechne ${L('1/'+B)}`,a:-k,tol:0.001,ex:`1/${B} = ${b}${sup('−'+k)}. Also ist der Logarithmus −${k}.`};
+ if(t===2)return {q:`Löse nach x: ${b}${sup('x')} = ${B}`,a:k,tol:0.001,ex:`x = ${L(B)}. Es gilt ${b}${sup(k)} = ${B}, also x = ${k}.`};
+ const i=R(1,3),j=R(1,3);
+ return {q:`Berechne ${L(Math.pow(b,i))} + ${L(Math.pow(b,j))}`,a:i+j,tol:0.001,ex:`Einzeln: ${i} und ${j}. Oder mit dem Gesetz log(x)+log(y) = log(x·y): ${L(Math.pow(b,i+j))} = ${i+j}.`};};
+
+GEN.m3=()=>{const t=R(0,2);
+ if(t===0){const x1=R(-4,2),dx=R(1,4),m=pick([-4,-3,-2,-1,1,2,3,4]),y1=R(-5,5);const x2=x1+dx,y2=y1+m*dx;
+  return {q:`Bestimme die Steigung m der Geraden durch P(${N(x1)}|${N(y1)}) und Q(${N(x2)}|${N(y2)}).`,a:m,tol:0.001,ex:`m = (y₂−y₁)/(x₂−x₁) = (${N(y2)}−(${N(y1)}))/(${N(x2)}−(${N(x1)})) = ${N(m*dx)}/${dx} = ${N(m)}.`};}
+ if(t===1){const m=pick([-4,-3,-2,2,3,4,5]),x0=R(-3,4),y0=R(-6,8);const n=y0-m*x0;
+  return {q:`Die Gerade f(x) = ${N(m)}x + n geht durch P(${N(x0)}|${N(y0)}). Bestimme n.`,a:n,tol:0.001,ex:`Punktprobe: ${N(y0)} = ${N(m)}·(${N(x0)}) + n, also n = ${N(y0)} − (${N(m*x0)}) = ${N(n)}.`};}
+ const x=R(-5,6),y=R(-5,6),A=2*x+y,B=x-y;const askX=Math.random()<0.5;
+ return {q:`Löse das Gleichungssystem und gib ${askX?'x':'y'} an:<br>I: 2x + y = ${N(A)}<br>II: x − y = ${N(B)}`,a:askX?x:y,tol:0.001,meta:{A,B,x,y},ex:`Addition I + II: 3x = ${N(A+B)}, also x = ${N(x)}. Einsetzen in II: y = x − ${N(B)} = ${N(y)}.`};};
+
+GEN.m4=()=>{const t=R(0,3);
+ if(t===0){let r1,r2;do{r1=R(-7,7);r2=R(-7,7);}while(r1>=r2);const p=-(r1+r2),q=r1*r2;
+  return {q:`Löse ${poly([[1,2],[p,1],[q,0]])} = 0. Gib die <b>größere</b> Lösung an.`,a:r2,tol:0.001,meta:{p,q,r1,r2},ex:`pq-Formel: x = −p/2 ± √((p/2)² − q) mit p = ${N(p)}, q = ${N(q)}. Die Lösungen sind ${N(r1)} und ${N(r2)}.`};}
+ if(t===1){let r1,r2;do{r1=R(-6,6);r2=R(-6,6);}while(r1===r2);const p=-(r1+r2),q=r1*r2;const asksum=Math.random()<0.5;
+  return {q:`Die Gleichung ${poly([[1,2],[p,1],[q,0]])} = 0 hat zwei Lösungen. Berechne ihre ${asksum?'<b>Summe</b>':'<b>Produkt</b>'} mit dem Satz von Vieta (ohne die Lösungen auszurechnen).`,a:asksum?-p:q,tol:0.001,ex:`Vieta: x₁ + x₂ = −p = ${N(-p)} und x₁ · x₂ = q = ${N(q)}.`};}
+ if(t===2){const cs=R(0,2);let p,q;
+  if(cs===0){p=R(-4,4);q=Math.ceil(p*p/4)+R(1,5);}
+  else if(cs===1){p=pick([-8,-6,-4,-2,2,4,6,8]);q=p*p/4;}
+  else{p=R(-6,6);q=Math.floor(p*p/4)-R(1,6);}
+  const D=p*p-4*q;const right=D>0?'zwei Lösungen':D===0?'genau eine Lösung':'keine (reelle) Lösung';
+  return mcq(`Wie viele reelle Lösungen hat ${poly([[1,2],[p,1],[q,0]])} = 0?`,right,['zwei Lösungen','genau eine Lösung','keine (reelle) Lösung'].filter(s=>s!==right),`Diskriminante D = (p/2)² − q = ${fmt(p*p/4-q)}. D>0: zwei, D=0: eine, D<0: keine Lösung.`);}
+ const k=pick([-8,-6,-5,-4,-3,-2,2,3,4,5,6,8]);
+ return {q:`Löse ${poly([[1,2],[k,1]])} = 0. Gib die <b>größere</b> Lösung an.`,a:Math.max(0,-k),tol:0.001,ex:`Ausklammern: x(x + ${N(k)}) = 0. Ein Produkt ist 0, wenn ein Faktor 0 ist: x = 0 oder x = ${N(-k)}.`};};
+
+GEN.m5=()=>{const t=R(0,2);
+ if(t===0){const a=pick([-3,-2,-1,1,2,3]),d=pick([-5,-4,-3,-2,-1,1,2,3,4,5]),e=pick([-6,-5,-4,-3,-2,-1,1,2,3,4,5,6]);const askx=Math.random()<0.5;
+  return {q:`Die Parabel hat die Gleichung f(x) = ${a===1?'':a===-1?'−':N(a)}(x ${d>=0?'−':'+'} ${ab(d)})${sup(2)} ${e>=0?'+':'−'} ${ab(e)}. Wie lautet die ${askx?'<b>x</b>':'<b>y</b>'}-Koordinate des Scheitelpunkts?`,a:askx?d:e,tol:0.001,ex:`Scheitelform a(x − d)² + e hat den Scheitel S(d|e). Hier ist d = ${N(d)} (Vorzeichen in der Klammer drehen!) und e = ${N(e)}.`};}
+ if(t===1){const b=pick([-8,-6,-4,-2,2,4,6,8]),c=R(-5,10);
+  return {q:`Bestimme die <b>y</b>-Koordinate des Scheitelpunkts von f(x) = ${poly([[1,2],[b,1],[c,0]])} (quadratische Ergänzung).`,a:c-b*b/4,tol:0.001,ex:`x² + ${N(b)}x + ${N(c)} = (x + ${N(b/2)})² + ${N(c)} − ${fmt(b*b/4)} = (x + ${N(b/2)})² + ${N(c-b*b/4)}. Scheitel y = ${N(c-b*b/4)}.`};}
+ const a=pick([-3,-2,-0.5,0.5,2,3]),c=R(-4,5);const dir=a>0?'nach oben':'nach unten',w=ab(a)<1?'gestaucht (breiter als die Normalparabel)':'gestreckt (schmaler als die Normalparabel)';
+ const right=`${dir} geöffnet und ${w}`;
+ const all=['nach oben','nach unten'].flatMap(d=>['gestaucht (breiter als die Normalparabel)','gestreckt (schmaler als die Normalparabel)'].map(x=>`${d} geöffnet und ${x}`));
+ return mcq(`Welche Aussage passt zur Parabel f(x) = ${N(a).replace('.',',')}x² ${c>=0?'+':'−'} ${ab(c)}?`,right,all.filter(s=>s!==right),`a ${a>0?'>':'<'} 0 → ${dir}. |a| ${ab(a)<1?'<':'>'} 1 → ${ab(a)<1?'gestaucht':'gestreckt'}.`);};
+
+GEN.m6=()=>{const t=R(0,3);
+ if(t===0){const K=pick([100,200,500,1000,2500]),p=pick([2,3,4,5,8,10]),n=R(2,6);const a=rd(K*Math.pow(1+p/100,n));
+  return {q:`${K} € werden mit ${p} % Zinsen pro Jahr angelegt (Zinseszins). Wie viel Euro sind es nach ${n} Jahren? (auf ganze Euro runden)`,a,tol:0.6,unit:'€',ex:`K = ${K} · ${fmt(1+p/100)}${sup(n)} ≈ ${fmt(K*Math.pow(1+p/100,n),2)} €. Der Wachstumsfaktor ist 1 + p/100.`};}
+ if(t===1){const a=pick([2,3,5]),b=pick([2,3]),x=R(2,4);
+  return {q:`Berechne f(${x}) für f(x) = ${a} · ${b}${sup('x')}.`,a:a*Math.pow(b,x),tol:0.001,ex:`f(${x}) = ${a} · ${b}${sup(x)} = ${a} · ${Math.pow(b,x)} = ${a*Math.pow(b,x)}.`};}
+ if(t===2){const N0=pick([10,50,100,200]),T=pick([2,3,4,5]),k=R(2,5);
+  return {q:`Eine Bakterienkultur verdoppelt sich alle ${T} Stunden. Am Anfang sind es ${N0} Bakterien. Wie viele sind es nach ${T*k} Stunden?`,a:N0*Math.pow(2,k),tol:0.5,ex:`${T*k} h sind ${k} Verdopplungen: N = ${N0} · 2${sup(k)} = ${N0*Math.pow(2,k)}.`};}
+ const up=Math.random()<0.5,p=pick([3,5,7,12,15,20,25]);const a=up?1+p/100:1-p/100;
+ return {q:`Welcher Wachstumsfaktor gehört zu einer ${up?'Zunahme':'Abnahme'} um ${p} % pro Zeitschritt?`,a,tol:0.0006,ex:`${up?'Zunahme':'Abnahme'}: Faktor = 1 ${up?'+':'−'} ${p}/100 = ${fmt(a)}.`};};
+
+GEN.m7=()=>{const t=R(0,3);
+ if(t===0){const c=R(5,15),al=R(20,70);const a=rd(c*Math.sin(al*DEG),2);
+  return {q:`Rechtwinkliges Dreieck: Hypotenuse c = ${c} cm, Winkel α = ${al}°. Berechne die Gegenkathete a in cm (Taschenrechner auf DEG!).`,a,tol:0.06,unit:'cm',ex:`sin α = Gegenkathete/Hypotenuse, also a = c · sin α = ${c} · sin(${al}°) ≈ ${fmt(a,2)} cm.`};}
+ if(t===1){const c=R(5,15),al=R(20,70);const b=rd(c*Math.cos(al*DEG),2);
+  return {q:`Rechtwinkliges Dreieck: Hypotenuse c = ${c} cm, Winkel α = ${al}°. Berechne die Ankathete b in cm (Taschenrechner auf DEG!).`,a:b,tol:0.06,unit:'cm',ex:`cos α = Ankathete/Hypotenuse, also b = c · cos α = ${c} · cos(${al}°) ≈ ${fmt(b,2)} cm.`};}
+ if(t===2){let a,b;do{a=R(3,12);b=R(3,12);}while(a===b);const al=rd(Math.atan(a/b)/DEG,1);
+  return {q:`Die Katheten eines rechtwinkligen Dreiecks sind ${a} cm (gegenüber von α) und ${b} cm (anliegend an α). Wie groß ist α in Grad?`,a:al,tol:0.15,unit:'°',ex:`tan α = Gegenkathete/Ankathete = ${a}/${b}. α = tan⁻¹(${a}/${b}) ≈ ${fmt(al,1)}°.`};}
+ const s=R(8,30),al=R(25,60);const h=rd(s*Math.tan(al*DEG),1);
+ return {q:`Ein Baum wirft einen ${s} m langen Schatten. Die Sonne steht ${al}° über dem Horizont. Wie hoch ist der Baum in m?`,a:h,tol:0.15,unit:'m',ex:`tan α = Höhe/Schatten, also h = ${s} · tan(${al}°) ≈ ${fmt(h,1)} m.`};};
+
+GEN.m8=()=>{const t=R(0,3);
+ if(t===0){const al=R(30,70),be=R(30,80),a=R(5,15);const b=rd(a*Math.sin(be*DEG)/Math.sin(al*DEG),2);
+  return {q:`Im Dreieck ist a = ${a} cm, α = ${al}° und β = ${be}°. Berechne b in cm.`,a:b,tol:0.06,unit:'cm',ex:`Sinussatz: a/sin α = b/sin β, also b = ${a} · sin(${be}°) / sin(${al}°) ≈ ${fmt(b,2)} cm.`};}
+ if(t===1){const a=R(4,12),b=R(4,12),g=R(30,120);const c=rd(Math.sqrt(a*a+b*b-2*a*b*Math.cos(g*DEG)),2);
+  return {q:`Im Dreieck ist a = ${a} cm, b = ${b} cm und γ = ${g}°. Berechne c in cm.`,a:c,tol:0.06,unit:'cm',ex:`Kosinussatz: c² = a² + b² − 2ab·cos γ = ${a*a} + ${b*b} − ${2*a*b}·cos(${g}°). Daraus c ≈ ${fmt(c,2)} cm.`};}
+ if(t===2){const [a,b,c]=pick([[5,6,7],[4,5,6],[6,7,8],[7,8,9],[5,7,9],[6,8,10]]);const g=rd(Math.acos((a*a+b*b-c*c)/(2*a*b))/DEG,1);
+  return {q:`Ein Dreieck hat die Seiten a = ${a} cm, b = ${b} cm und c = ${c} cm. Berechne den Winkel γ (gegenüber von c) in Grad.`,a:g,tol:0.2,unit:'°',ex:`Kosinussatz nach γ umgestellt: cos γ = (a² + b² − c²)/(2ab) = ${a*a+b*b-c*c}/${2*a*b}. γ = cos⁻¹(…) ≈ ${fmt(g,1)}°.`};}
+ const sws=Math.random()<0.5;
+ const q=sws?'Gegeben sind zwei Seiten und der <b>eingeschlossene</b> Winkel (SWS). Mit welchem Satz berechnest du die dritte Seite?':'Gegeben sind <b>zwei Winkel und eine Seite</b> (WSW). Mit welchem Satz berechnest du eine weitere Seite?';
+ const right=sws?'Kosinussatz':'Sinussatz';
+ return mcq(q,right,['Sinussatz','Kosinussatz','Satz des Pythagoras','Strahlensatz'].filter(s=>s!==right&&(s!=='Strahlensatz'||Math.random()<0.5)).slice(0,3),sws?'SWS und SSS → Kosinussatz. Sinussatz braucht ein Seiten-Winkel-Paar, das gegenüberliegt.':'Bei WSW kennst du über die Winkelsumme alle Winkel und eine Seite → Sinussatz.');};
+
+GEN.m9=()=>{const t=R(0,3);
+ if(t===0){const al=pick([30,45,60,90,120,135,150,180,210,225,240,270,300,315,330,360]);
+  return {q:`Rechne ${al}° ins Bogenmaß um: ${al}° = ? · π (Dezimalzahl oder Bruch, z. B. 3/4).`,a:al/180,tol:0.003,ex:`Bogenmaß = α · π/180°. Also ${al}/180 · π = ${fmt(al/180,3)} · π.`};}
+ if(t===1){const b=pick([2,3,4,5,6,8,9,10,12]);
+  return {q:`Wie groß ist die Periode von f(x) = sin(${b}x) in Grad?`,a:360/b,tol:0.01,unit:'°',ex:`Periode = 360°/b = 360°/${b} = ${360/b}° (im Bogenmaß 2π/${b}).`};}
+ if(t===2){const a=R(2,5),d=R(-3,3),mx=Math.random()<0.5;
+  return {q:`Welchen ${mx?'<b>Maximalwert</b>':'<b>Minimalwert</b>'} hat f(x) = ${a}·sin(x) ${d>=0?'+':'−'} ${ab(d)}?`,a:mx?a+d:-a+d,tol:0.001,ex:`sin(x) liegt zwischen −1 und 1. Mit Amplitude ${a} und Verschiebung ${N(d)}: Maximum ${N(a+d)}, Minimum ${N(-a+d)}.`};}
+ const [f,al,v]=pick([['sin',30,0.5],['cos',60,0.5],['sin',90,1],['cos',0,1],['cos',180,-1],['sin',270,-1],['cos',90,0],['sin',0,0],['sin',180,0],['cos',120,-0.5],['sin',210,-0.5]]);
+ return {q:`Gib den exakten Wert an: ${f}(${al}°)`,a:v,tol:0.01,ex:`Am Einheitskreis: ${f}(${al}°) = ${fmt(v)}.`};};
+
+GEN.m10=()=>{const exps=sh([0,1,2,3,4]).slice(0,3).sort((a,b)=>b-a);const cs=[-5,-4,-3,-2,-1,1,2,3,4,5];
+ const terms=exps.map(e=>[pick(cs),e]);const x0=pick([-2,-1,1,2,3]);
+ const d=terms.map(([c,e])=>[c*e,e-1]).filter(([c])=>c!==0);
+ let v=0;d.forEach(([c,e])=>{v+=c*Math.pow(x0,e);});
+ return {q:`Gegeben ist f(x) = ${poly(terms)}. Berechne f′(${N(x0)}).`,a:v,tol:0.001,meta:{terms,x0},ex:`Potenzregel (x${sup('n')} → n·x${sup('n−1')}), Konstanten fallen weg: f′(x) = ${poly(d)}. Einsetzen von x = ${N(x0)} ergibt ${N(v)}.`};};
+
+GEN.m11=()=>{const t=R(0,3);
+ if(t===0){const k=pick([1,2,3,4]);
+  return {q:`f(x) = ${poly([[1,3],[-3*k*k,1]])}. Bestimme die <b>x</b>-Koordinate des <b>Tiefpunkts</b>.`,a:k,tol:0.001,ex:`f′(x) = 3x² − ${3*k*k} = 0 → x = ±${k}. f″(x) = 6x: f″(${k}) = ${6*k} > 0 → Tiefpunkt bei x = ${k}.`};}
+ if(t===1){const k=pick([1,2,3]),c=R(-5,5);
+  return {q:`f(x) = ${poly([[1,3],[-3*k*k,1],[c,0]])}. Bestimme die <b>y</b>-Koordinate des <b>Hochpunkts</b>.`,a:2*k*k*k+c,tol:0.001,ex:`f′(x) = 3x² − ${3*k*k} = 0 → x = ±${k}. f″(−${k}) = −${6*k} < 0 → Hochpunkt bei x = −${k}. y-Wert in f einsetzen (nicht in f′!): f(−${k}) = ${N(2*k*k*k+c)}.`};}
+ if(t===2)return mcq('Welche Bedingung muss für eine <b>Extremstelle</b> x₀ von f erfüllt sein?','f′(x₀) = 0 und f″(x₀) ≠ 0',['f(x₀) = 0','f″(x₀) = 0 und f‴(x₀) ≠ 0','f′(x₀) ≠ 0 und f″(x₀) = 0'],'Extremstelle: waagerechte Tangente (f′ = 0) und Vorzeichenwechsel, hinreichend f″ ≠ 0. f″ = 0 und f‴ ≠ 0 gehört zum Wendepunkt.');
+ const a=pick([-3,-2,-1,1,2,3]),b=R(-6,6);
+ return {q:`f(x) = ${poly([[1,3],[-3*a,2],[b,1]])}. Bestimme die <b>x</b>-Koordinate des Wendepunkts.`,a,tol:0.001,ex:`f″(x) = 6x − ${N(6*a)} = 0 → x = ${N(a)}. (f‴ = 6 ≠ 0, also Wendestelle.)`};};
+
+GEN.m12=()=>{const t=R(0,3);
+ if(t<3){const r=R(2,6),b=R(2,6),n=r+b;
+  if(t===0)return {q:`Eine Urne enthält ${r} rote und ${b} blaue Kugeln. Du ziehst zweimal <b>ohne</b> Zurücklegen. Wie groß ist die Wahrscheinlichkeit für zwei rote Kugeln? (Bruch oder 3 Nachkommastellen)`,a:r*(r-1)/(n*(n-1)),tol:0.0015,ex:`Pfadregel: P = ${r}/${n} · ${r-1}/${n-1} = ${r*(r-1)}/${n*(n-1)} ≈ ${fmt(r*(r-1)/(n*(n-1)))}.`};
+  if(t===1)return {q:`Eine Urne enthält ${r} rote und ${b} blaue Kugeln. Du ziehst zweimal <b>mit</b> Zurücklegen. Wie groß ist die Wahrscheinlichkeit für zwei rote Kugeln? (Bruch oder 3 Nachkommastellen)`,a:r*r/(n*n),tol:0.0015,ex:`Mit Zurücklegen bleibt es bei ${r}/${n} pro Zug: P = (${r}/${n})² = ${r*r}/${n*n} ≈ ${fmt(r*r/(n*n))}.`};
+  return {q:`Eine Urne enthält ${r} rote und ${b} blaue Kugeln. Du ziehst zweimal <b>mit</b> Zurücklegen. Wie groß ist die Wahrscheinlichkeit für <b>genau eine</b> rote Kugel? (Bruch oder 3 Nachkommastellen)`,a:2*r*b/(n*n),tol:0.0015,ex:`Zwei Pfade (rot–blau und blau–rot): P = 2 · ${r}/${n} · ${b}/${n} = ${2*r*b}/${n*n} ≈ ${fmt(2*r*b/(n*n))}.`};}
+ const s=R(2,12),w=6-ab(s-7);
+ return {q:`Zwei faire Würfel werden geworfen. Wie groß ist die Wahrscheinlichkeit für die Augensumme ${s}? (Bruch oder 3 Nachkommastellen)`,a:w/36,tol:0.0015,ex:`Es gibt ${w} günstige Paare von 36 möglichen. P = ${w}/36 ≈ ${fmt(w/36)}.`};};
+
+const fact=n=>n<=1?1:n*fact(n-1);
+const binom=(n,k)=>fact(n)/(fact(k)*fact(n-k));
+GEN.m13=()=>{const t=R(0,3);
+ if(t===0){const n=R(3,6);return {q:`Auf wie viele Arten können ${n} Personen in einer Reihe stehen?`,a:fact(n),tol:0.001,ex:`${n}! = ${Array.from({length:n},(_, i)=>n-i).join(' · ')} = ${fact(n)}.`};}
+ if(t===1){const n=R(5,10),k=R(2,3);return {q:`Aus ${n} Personen sollen ${k} ausgewählt werden (Reihenfolge egal). Wie viele Möglichkeiten gibt es?`,a:binom(n,k),tol:0.001,ex:`Binomialkoeffizient: C(${n},${k}) = ${n}! / (${k}! · ${n-k}!) = ${binom(n,k)}.`};}
+ if(t===2){const L=R(3,5),A=pick([10,6,4]);return {q:`Wie viele ${L}-stellige Codes gibt es, wenn jede Stelle aus ${A===10?'den Ziffern 0–9':A+' verschiedenen Zeichen'} bestehen darf (Wiederholung erlaubt)?`,a:Math.pow(A,L),tol:0.001,ex:`Mit Wiederholung, Reihenfolge wichtig: ${A}${sup(L)} = ${Math.pow(A,L)}.`};}
+ const n=R(6,10);return {q:`${n} Läufer starten. Wie viele Möglichkeiten gibt es für Gold, Silber und Bronze?`,a:n*(n-1)*(n-2),tol:0.001,ex:`Reihenfolge wichtig, ohne Wiederholung: ${n} · ${n-1} · ${n-2} = ${n*(n-1)*(n-2)}.`};};
+
+GEN.m14=()=>{const t=R(0,3);
+ if(t===0){const [a,b,c,l]=pick([[1,2,2,3],[2,3,6,7],[2,10,11,15],[4,4,7,9],[2,6,9,11],[6,6,7,11],[1,4,8,9],[3,4,12,13]]);const v=sh([a,b,c]).map(x=>x*(Math.random()<0.5?1:-1));
+  return {q:`Berechne die Länge (den Betrag) des Vektors v = ${vec(...v)}.`,a:l,tol:0.001,ex:`|v| = √(x² + y² + z²) = √(${v[0]*v[0]} + ${v[1]*v[1]} + ${v[2]*v[2]}) = √${l*l} = ${l}.`};}
+ if(t===1){const a=[R(-4,4),R(-4,4),R(-4,4)],b=[R(-4,4),R(-4,4),R(-4,4)];const s=a[0]*b[0]+a[1]*b[1]+a[2]*b[2];
+  return {q:`Berechne das Skalarprodukt ${vec(...a)} · ${vec(...b)}`,a:s,tol:0.001,meta:{a,b,s},ex:`a·b = ${N(a[0])}·${N(b[0])} + ${N(a[1])}·${N(b[1])} + ${N(a[2])}·${N(b[2])} = ${N(s)}.`};}
+ if(t===2){const A=[R(-4,5),R(-4,5),R(-4,5)],B=[R(-4,5),R(-4,5),R(-4,5)];const i=R(0,2);const nm=['x','y','z'][i];
+  return {q:`Gegeben sind A(${A.map(N).join('|')}) und B(${B.map(N).join('|')}). Wie lautet die <b>${nm}</b>-Koordinate des Vektors AB (von A nach B)?`,a:B[i]-A[i],tol:0.001,ex:`AB = B − A (Spitze minus Fuß). ${nm}-Koordinate: ${N(B[i])} − (${N(A[i])}) = ${N(B[i]-A[i])}.`};}
+ const tt=R(-6,6),p=R(-4,4),q=R(-4,4),s=R(-4,4),u=R(-4,4);const tv=-(p*s+q*u);
+ return {q:`Für welchen Wert von t sind die Vektoren a = ${vec('t',p,q)} und b = ${vec(1,s,u)} orthogonal?`,a:tv,tol:0.001,meta:{p,q,s,u,tv},ex:`Orthogonal ⇔ Skalarprodukt = 0: t·1 + ${N(p)}·${N(s)} + ${N(q)}·${N(u)} = 0 → t = ${N(tv)}.`};};
+
+GEN.m15=()=>{const t=R(0,3);const r=R(2,9),h=R(3,12);let a,q,ex;
+ if(t===0){a=Math.PI*r*r*h;q=`Zylinder mit r = ${r} cm und h = ${h} cm. Berechne das Volumen in cm³ (eine Nachkommastelle).`;ex=`V = π·r²·h = π · ${r*r} · ${h} ≈ ${fmt(a,1)} cm³.`;}
+ else if(t===1){a=Math.PI*r*r*h/3;q=`Kegel mit r = ${r} cm und Höhe h = ${h} cm. Berechne das Volumen in cm³ (eine Nachkommastelle).`;ex=`V = ⅓·π·r²·h = ⅓ · π · ${r*r} · ${h} ≈ ${fmt(a,1)} cm³.`;}
+ else if(t===2){a=4/3*Math.PI*r*r*r;q=`Kugel mit Radius r = ${r} cm. Berechne das Volumen in cm³ (eine Nachkommastelle).`;ex=`V = 4/3·π·r³ = 4/3 · π · ${r*r*r} ≈ ${fmt(a,1)} cm³.`;}
+ else{a=2*Math.PI*r*(r+h);q=`Zylinder mit r = ${r} cm und h = ${h} cm. Berechne die gesamte Oberfläche in cm² (eine Nachkommastelle).`;ex=`O = 2·π·r·(r + h) = 2 · π · ${r} · ${r+h} ≈ ${fmt(a,1)} cm².`;}
+ a=rd(a,1);return {q,a,tol:Math.max(0.15,a*0.004),unit:t===3?'cm²':'cm³',ex};};
+
+/* ---------- PHYSIK ---------- */
+GEN.p1=()=>{const t=R(0,3);
+ if(t===0){const v=pick([30,45,60,72,90,108,120]),tm=pick([10,20,30,40,45]);const s=v*tm/60;
+  return {q:`Ein Auto fährt gleichförmig ${fmt(s)} km in ${tm} Minuten. Wie groß ist seine Geschwindigkeit in km/h?`,a:v,tol:0.5,unit:'km/h',ex:`v = s/t = ${fmt(s)} km / (${tm}/60 h) = ${v} km/h. Minuten zuerst in Stunden umrechnen.`};}
+ if(t===1){const k=pick([18,36,54,72,90,108,126,144]);
+  return {q:`Rechne ${k} km/h in m/s um.`,a:k/3.6,tol:0.06,unit:'m/s',ex:`1 m/s = 3,6 km/h. Also ${k} : 3,6 = ${fmt(k/3.6)} m/s.`};}
+ if(t===2){const m=pick([5,10,15,20,25,30,40]);
+  return {q:`Rechne ${m} m/s in km/h um.`,a:m*3.6,tol:0.5,unit:'km/h',ex:`1 m/s = 3,6 km/h. Also ${m} · 3,6 = ${fmt(m*3.6)} km/h.`};}
+ const v=pick([60,90,120]),tm=pick([10,20,30,40,45]);const s=v*tm/60;
+ return {q:`Ein Zug fährt mit konstant ${v} km/h. Wie viele Minuten braucht er für ${fmt(s)} km?`,a:tm,tol:0.5,unit:'min',ex:`t = s/v = ${fmt(s)} km / ${v} km/h = ${fmt(s/v,3)} h = ${tm} min.`};};
+
+GEN.p2=()=>{const t=R(0,3);
+ if(t===0){const a=R(1,5),tt=R(2,10);
+  return {q:`Ein Fahrzeug beschleunigt aus dem Stand mit a = ${a} m/s². Wie schnell ist es nach ${tt} s?`,a:a*tt,tol:0.05,unit:'m/s',ex:`v = a·t = ${a} · ${tt} = ${a*tt} m/s.`};}
+ if(t===1){const a=pick([1,2,3,4,5,10]),tt=R(2,8);const s=0.5*a*tt*tt;
+  return {q:`Ein Körper startet aus der Ruhe und beschleunigt mit a = ${a} m/s². Welche Strecke legt er in ${tt} s zurück?`,a:s,tol:0.05,unit:'m',ex:`s = ½·a·t² = 0,5 · ${a} · ${tt*tt} = ${fmt(s)} m.`};}
+ if(t===2){const v=pick([10,15,20,25,30]),a=pick([2,4,5,8]);const s=rd(v*v/(2*a),1);
+  return {q:`Ein Auto fährt mit ${v} m/s und bremst mit konstant ${a} m/s² bis zum Stillstand. Wie lang ist der Bremsweg?`,a:s,tol:0.15,unit:'m',ex:`s = v²/(2a) = ${v*v}/${2*a} = ${fmt(s,2)} m. Verdoppelte Geschwindigkeit → vierfacher Bremsweg.`};}
+ const a=pick([2,2.5,4,5]),tt=R(2,12);const v=a*tt;
+ return {q:`Ein Zug (a = ${fmt(a)} m/s²) soll aus dem Stand ${fmt(v)} m/s erreichen. Wie lange dauert das?`,a:tt,tol:0.05,unit:'s',ex:`t = v/a = ${fmt(v)} / ${fmt(a)} = ${tt} s.`};};
+
+GEN.p3=()=>{const t=R(0,3);
+ if(t===0){const m=pick([2,5,10,20,50,80]),a=pick([2,3,4,5]);
+  return {q:`Auf einen Körper der Masse ${m} kg wirkt eine resultierende Kraft, die ihn mit ${a} m/s² beschleunigt. Wie groß ist die Kraft?`,a:m*a,tol:0.05,unit:'N',ex:`2. Newtonsches Gesetz: F = m·a = ${m} · ${a} = ${m*a} N.`};}
+ if(t===1){const m=pick([2,5,8,10,25,60,75]);const F=m*GN;
+  return {q:`Wie groß ist die Gewichtskraft eines Körpers der Masse ${m} kg? (g = 9,81 N/kg; g = 10 N/kg ist auch ok)`,a:F,tol:F*0.022+0.05,unit:'N',ex:`F_G = m·g = ${m} · 9,81 = ${fmt(F,2)} N. Masse in kg, Kraft in N!`};}
+ if(t===2){const m=pick([800,1000,1200,1500]),a=pick([1,1.5,2,2.5]),FR=pick([200,300,400,500,600]);const FA=m*a+FR;
+  return {q:`Ein Auto (m = ${m} kg) wird mit ${FA} N angetrieben. Die Reibungskraft beträgt ${FR} N. Wie groß ist die Beschleunigung?`,a,tol:0.02,unit:'m/s²',ex:`Resultierende Kraft: ${FA} − ${FR} = ${FA-FR} N. a = F/m = ${FA-FR}/${m} = ${fmt(a)} m/s².`};}
+ const D=pick([20,50,100,200]),s=pick([2,5,10,15,20]);const F=D*s/100;
+ return {q:`Eine Feder (Federkonstante D = ${D} N/m) wird um ${s} cm gedehnt. Welche Kraft wirkt?`,a:F,tol:0.03,unit:'N',ex:`Hooke: F = D·s = ${D} N/m · ${fmt(s/100)} m = ${fmt(F,2)} N. Dehnung zuerst in m umrechnen.`};};
+
+GEN.p4=()=>{const t=R(0,3);
+ if(t===0){const F=pick([20,50,100,250,400]),s=pick([2,5,10,20]);
+  return {q:`Eine Kraft von ${F} N verschiebt einen Körper ${s} m in Kraftrichtung. Welche Arbeit wird verrichtet?`,a:F*s,tol:0.5,unit:'J',ex:`W = F·s = ${F} N · ${s} m = ${F*s} J.`};}
+ if(t===1){const W=pick([12,24,30,60,90,120]),tm=pick([10,20,30,60]);const P=W*1000/tm;
+  return {q:`Ein Motor verrichtet ${W} kJ Arbeit in ${tm} s. Welche Leistung hat er?`,a:P,tol:0.5,unit:'W',ex:`P = W/t = ${W*1000} J / ${tm} s = ${fmt(P,1)} W.`};}
+ if(t===2){const m=pick([2,5,10,50,80]),h=pick([2,5,10,20,45]);const E=m*GN*h;
+  return {q:`Welche potenzielle Energie hat ein Körper der Masse ${m} kg in ${h} m Höhe? (g = 9,81 N/kg; 10 N/kg ist auch ok)`,a:E,tol:E*0.022+0.1,unit:'J',ex:`E_pot = m·g·h = ${m} · 9,81 · ${h} ≈ ${fmt(E,1)} J.`};}
+ const m=pick([2,4,10,50]),v=pick([2,4,10,20]);const E=0.5*m*v*v;
+ return {q:`Welche kinetische Energie hat ein Körper der Masse ${m} kg bei ${v} m/s?`,a:E,tol:0.5,unit:'J',ex:`E_kin = ½·m·v² = 0,5 · ${m} · ${v*v} = ${fmt(E)} J. Die Geschwindigkeit geht quadratisch ein.`};};
+
+GEN.p5=()=>{const t=R(0,2);
+ if(t===0){const h=pick([5,10,20,45,80]);const v=Math.sqrt(2*GN*h);
+  return {q:`Ein Stein fällt (ohne Luftwiderstand) aus ${h} m Höhe. Mit welcher Geschwindigkeit schlägt er unten auf?`,a:rd(v,1),tol:v*0.025+0.05,unit:'m/s',ex:`m·g·h = ½·m·v² → v = √(2·g·h) = √(2·9,81·${h}) ≈ ${fmt(v,1)} m/s. Die Masse kürzt sich weg.`};}
+ if(t===1){const v=pick([10,15,20,25]);const h=v*v/(2*GN);
+  return {q:`Aus welcher Höhe müsste ein Körper frei fallen, um unten ${v} m/s zu erreichen?`,a:rd(h,1),tol:h*0.025+0.1,unit:'m',ex:`h = v²/(2g) = ${v*v}/(2·9,81) ≈ ${fmt(h,1)} m.`};}
+ const h1=pick([30,40,50]),h2=pick([5,10,15,20]);const v=Math.sqrt(2*GN*(h1-h2));
+ return {q:`Ein Achterbahnwagen startet in ${h1} m Höhe aus der Ruhe (reibungsfrei). Wie schnell ist er in ${h2} m Höhe?`,a:rd(v,1),tol:v*0.025+0.1,unit:'m/s',ex:`Energieerhaltung: Der Höhenunterschied ${h1-h2} m wird zu E_kin. v = √(2·g·Δh) = √(2·9,81·${h1-h2}) ≈ ${fmt(v,1)} m/s.`};};
+
+GEN.p6=()=>{const t=R(0,5);
+ if(t===0){const Rr=pick([10,22,47,100,220]),I=pick([0.1,0.2,0.5,1,2]);
+  return {q:`Durch einen Widerstand von ${Rr} Ω fließt ein Strom von ${fmt(I)} A. Welche Spannung liegt an?`,a:Rr*I,tol:0.02,unit:'V',ex:`U = R·I = ${Rr} Ω · ${fmt(I)} A = ${fmt(Rr*I,2)} V.`};}
+ if(t===1){const U=pick([6,9,12,24,230]),I=pick([0.1,0.2,0.5,1,2]);const Rr=U/I;
+  return {q:`An einem Bauteil liegen ${U} V an, es fließen ${fmt(I)} A. Wie groß ist der Widerstand?`,a:Rr,tol:Rr*0.005+0.01,unit:'Ω',ex:`R = U/I = ${U} V / ${fmt(I)} A = ${fmt(Rr,2)} Ω.`};}
+ if(t===2){const a=pick([10,20,30,47,100]),b=pick([22,33,50,68,100]);
+  return {q:`Zwei Widerstände (${a} Ω und ${b} Ω) sind in <b>Reihe</b> geschaltet. Wie groß ist der Gesamtwiderstand?`,a:a+b,tol:0.01,unit:'Ω',ex:`In Reihe addieren sich die Widerstände: ${a} + ${b} = ${a+b} Ω.`};}
+ if(t===3){const [a,b]=pick([[6,12],[10,10],[20,30],[30,60],[15,10],[12,4],[60,20]]);const r=a*b/(a+b);
+  return {q:`Zwei Widerstände (${a} Ω und ${b} Ω) sind <b>parallel</b> geschaltet. Wie groß ist der Gesamtwiderstand?`,a:r,tol:0.02,unit:'Ω',ex:`1/R = 1/${a} + 1/${b} → R = (${a}·${b})/(${a}+${b}) = ${fmt(r)} Ω. Parallel ist R kleiner als jeder Einzelwiderstand.`};}
+ if(t===4){const U=pick([5,12,230]),I=pick([0.5,1,2,4,10]);
+  return {q:`Ein Gerät liegt an ${U} V und zieht ${fmt(I)} A. Welche Leistung nimmt es auf?`,a:U*I,tol:0.05,unit:'W',ex:`P = U·I = ${U} V · ${fmt(I)} A = ${fmt(U*I)} W.`};}
+ const P=pick([60,100,800,1500,2000]),h=pick([1,2,3,5,10]);const E=P*h/1000;
+ return {q:`Ein Gerät mit ${P} W läuft ${h} Stunden. Wie viel Energie verbraucht es in kWh?`,a:E,tol:0.01,unit:'kWh',ex:`E = P·t = ${P/1000} kW · ${h} h = ${fmt(E,3)} kWh.`};};
+
+GEN.p7=()=>{const t=R(0,3);
+ if(t===0){const r=pick([0.5,1,2,5,10]),T=pick([1,2,4,5,10]);const v=2*Math.PI*r/T;
+  return {q:`Ein Körper läuft auf einer Kreisbahn mit r = ${fmt(r)} m, Umlaufzeit T = ${T} s. Wie groß ist die Bahngeschwindigkeit?`,a:rd(v,2),tol:v*0.02+0.01,unit:'m/s',ex:`v = 2π·r/T = 2π · ${fmt(r)} / ${T} ≈ ${fmt(v,2)} m/s.`};}
+ if(t===1){const v=pick([2,4,5,10,20]),r=pick([2,4,5,10,20]);const a=v*v/r;
+  return {q:`Ein Körper bewegt sich mit ${v} m/s auf einer Kreisbahn mit Radius ${r} m. Wie groß ist die Zentripetalbeschleunigung?`,a,tol:a*0.02+0.01,unit:'m/s²',ex:`a_z = v²/r = ${v*v}/${r} = ${fmt(a,2)} m/s².`};}
+ if(t===2){const n=pick([60,120,180,300,600,1200]);
+  return {q:`Ein Rotor macht ${n} Umdrehungen pro Minute. Wie groß ist die Frequenz?`,a:n/60,tol:0.01,unit:'Hz',ex:`f = ${n} / 60 s = ${n/60} Hz (Umdrehungen pro Sekunde).`};}
+ const f=pick([0.5,2,4,5,10,50]);const T=1/f;
+ return {q:`Ein Rad dreht sich mit der Frequenz f = ${fmt(f)} Hz. Wie groß ist die Umlaufzeit T?`,a:T,tol:T*0.02+0.0005,unit:'s',ex:`T = 1/f = 1/${fmt(f)} Hz = ${fmt(T,3)} s.`};};
+
+GEN.p8=()=>{const t=R(0,3);
+ if(t===0){const m=pick([0.5,1,1.5,2,3]),dT=pick([10,20,30,40,50,60,70,80]);const Q=4.19*m*dT;
+  return {q:`Wie viel Wärme (in kJ) braucht man, um ${fmt(m)} kg Wasser um ${dT} K zu erwärmen? (c = 4,19 kJ/(kg·K))`,a:rd(Q,1),tol:Q*0.012+0.05,unit:'kJ',ex:`Q = c·m·ΔT = 4,19 · ${fmt(m)} · ${dT} ≈ ${fmt(Q,1)} kJ.`};}
+ if(t===1){let a,b;do{a=pick([10,20,30,40,50,60,70,80,90]);b=pick([10,20,30,40,50,60,70,80,90]);}while(a>=b);
+  return {q:`Zwei gleich große Wassermengen mit ${a} °C und ${b} °C werden gemischt. Welche Mischtemperatur stellt sich ein (ohne Wärmeverlust)?`,a:(a+b)/2,tol:0.3,unit:'°C',ex:`Bei gleichen Massen ergibt sich der Mittelwert: (${a} + ${b})/2 = ${(a+b)/2} °C.`};}
+ if(t===2){const P=pick([1500,2000,2400]),m=pick([0.5,1,1.5]),dT=pick([60,70,80]);const tm=4190*m*dT/P;
+  return {q:`Ein Wasserkocher (P = ${P} W, ohne Verluste) erwärmt ${fmt(m)} kg Wasser um ${dT} K. Wie lange dauert das in Sekunden? (c = 4190 J/(kg·K))`,a:rd(tm),tol:tm*0.012+1,unit:'s',ex:`Q = c·m·ΔT = 4190 · ${fmt(m)} · ${dT} = ${fmt(4190*m*dT,0)} J. t = Q/P = ${fmt(4190*m*dT,0)}/${P} ≈ ${fmt(tm,1)} s.`};}
+ return mcq('Eis (0 °C) wird bei 0 °C geschmolzen und dabei weiter erhitzt. Was passiert mit der Temperatur, solange noch Eis vorhanden ist?','Sie bleibt konstant bei 0 °C',['Sie steigt langsam an','Sie sinkt unter 0 °C','Sie steigt sofort auf 100 °C'],'Beim Schmelzen wird die zugeführte Energie zum Aufbrechen der Kristallstruktur genutzt (Schmelzwärme), nicht zur Temperaturerhöhung.');};
+
+GEN.p9=()=>{const t=R(0,4);
+ if(t===0){const T=pick([0.01,0.02,0.05,0.2,0.5,2]);const f=1/T;
+  return {q:`Eine Schwingung hat die Periodendauer T = ${fmt(T)} s. Wie groß ist die Frequenz?`,a:f,tol:f*0.01+0.001,unit:'Hz',ex:`f = 1/T = 1/${fmt(T)} s = ${fmt(f)} Hz.`};}
+ if(t===1){const l=pick([0.5,1,2,3,5]),f=pick([2,10,50,100,200]);
+  return {q:`Eine Welle hat die Wellenlänge λ = ${fmt(l)} m und die Frequenz f = ${f} Hz. Wie groß ist ihre Ausbreitungsgeschwindigkeit?`,a:l*f,tol:l*f*0.01,unit:'m/s',ex:`c = λ·f = ${fmt(l)} m · ${f} Hz = ${fmt(l*f)} m/s.`};}
+ if(t===2){const tm=pick([2,3,5,6,9,12]);
+  return {q:`Zwischen Blitz und Donner vergehen ${tm} s. Wie weit ist das Gewitter entfernt? (Schallgeschwindigkeit 340 m/s; das Licht ist praktisch sofort da)`,a:340*tm,tol:340*tm*0.02,unit:'m',ex:`s = c·t = 340 m/s · ${tm} s = ${340*tm} m.`};}
+ if(t===3){const l=pick([0.25,1,2.25,4]);const T=2*Math.PI*Math.sqrt(l/GN);
+  return {q:`Wie groß ist die Schwingungsdauer eines Fadenpendels der Länge ${fmt(l)} m? (g = 9,81 m/s²)`,a:rd(T,2),tol:Math.max(0.04,T*0.02),unit:'s',ex:`T = 2π·√(l/g) = 2π·√(${fmt(l)}/9,81) ≈ ${fmt(T,2)} s. Die Masse spielt keine Rolle.`};}
+ const m=pick([0.1,0.25,0.4,1]),D=pick([10,25,40,100]);const T=2*Math.PI*Math.sqrt(m/D);
+ return {q:`Ein Federpendel hat die Masse ${fmt(m)} kg und die Federkonstante D = ${D} N/m. Wie groß ist die Schwingungsdauer?`,a:rd(T,2),tol:Math.max(0.02,T*0.02),unit:'s',ex:`T = 2π·√(m/D) = 2π·√(${fmt(m)}/${D}) ≈ ${fmt(T,2)} s.`};};
+
+GEN.p10=()=>{const t=R(0,3);
+ if(t===0){const N0=pick([480,640,800,1600,3200]),T=pick([2,4,5,8,10]),k=R(1,4);
+  return {q:`Eine Probe enthält ${N0} Atomkerne eines Isotops mit der Halbwertszeit ${T} Tagen. Wie viele sind nach ${T*k} Tagen noch nicht zerfallen?`,a:N0/Math.pow(2,k),tol:0.5,ex:`${T*k} Tage sind ${k} Halbwertszeiten: N = ${N0} · (1/2)${sup(k)} = ${N0/Math.pow(2,k)}.`};}
+ if(t===1){const k=R(2,6);
+  return {q:`Nach wie vielen Halbwertszeiten ist nur noch 1/${Math.pow(2,k)} der ursprünglichen Kerne vorhanden?`,a:k,tol:0.001,ex:`(1/2)${sup(k)} = 1/${Math.pow(2,k)}. Es sind ${k} Halbwertszeiten.`};}
+ if(t===2){const k=R(2,5);const p=100/Math.pow(2,k);
+  return {q:`Wie viel Prozent einer radioaktiven Probe sind nach ${k} Halbwertszeiten noch übrig?`,a:p,tol:0.06,unit:'%',ex:`100 % · (1/2)${sup(k)} = ${fmt(p)} %.`};}
+ const qs=[['Welche Strahlung wird bereits von einem Blatt Papier abgeschirmt?',0],['Welche Strahlung besteht aus Helium-Kernen?',0],['Welche Strahlung besteht aus schnellen Elektronen?',1],['Welche Strahlung ist am durchdringendsten (nur dickes Blei oder Beton schwächt sie stark)?',2]];
+ const [q,c]=pick(qs);const opts=['α-Strahlung','β-Strahlung','γ-Strahlung'];
+ return mcq(q,opts[c],opts.filter((_,i)=>i!==c),'α: He-Kerne, wenig durchdringend, stark ionisierend. β: Elektronen, durch einige mm Aluminium gestoppt. γ: energiereiche elektromagnetische Strahlung, sehr durchdringend.');};
+
+GEN.p11=()=>{const t=R(0,3);const L=[[10,15,30],[10,20,20],[20,30,60],[15,30,30],[12,20,30],[6,9,18],[8,12,24],[10,30,15],[20,60,30],[12,36,18]];
+ if(t===0){const [f,g,b]=pick(L);
+  return {q:`Eine Sammellinse hat die Brennweite f = ${f} cm. Ein Gegenstand steht g = ${g} cm vor der Linse. In welcher Entfernung b entsteht das scharfe Bild?`,a:b,tol:0.05,unit:'cm',ex:`1/f = 1/g + 1/b → 1/b = 1/${f} − 1/${g}. Daraus b = ${b} cm.`};}
+ if(t===1){const [f,g,b]=pick(L);
+  return {q:`Ein Gegenstand steht ${g} cm vor einer Sammellinse, das scharfe Bild entsteht ${b} cm hinter der Linse. Wie groß ist die Brennweite?`,a:f,tol:0.05,unit:'cm',ex:`1/f = 1/g + 1/b = 1/${g} + 1/${b} → f = ${f} cm.`};}
+ if(t===2){const [f,g,b]=pick(L);const G=pick([2,3,4,5,6]);const B=G*b/g;
+  return {q:`Eine Kerze (G = ${G} cm hoch) steht ${g} cm vor einer Sammellinse mit f = ${f} cm. Das Bild entsteht bei b = ${b} cm. Wie hoch ist das Bild?`,a:rd(B,2),tol:0.03,unit:'cm',ex:`Abbildungsmaßstab: B/G = b/g → B = ${G} · ${b}/${g} = ${fmt(B,2)} cm.`};}
+ const a1=pick([30,45,60]),[n2,nm]=pick([[1.33,'Wasser'],[1.5,'Glas'],[1.6,'dichtem Flintglas']]);const a2=Math.asin(Math.sin(a1*DEG)/n2)/DEG;
+ return {q:`Ein Lichtstrahl trifft aus Luft (n = 1) unter α₁ = ${a1}° zum Lot auf ${nm} (n = ${fmt(n2)}). Wie groß ist der Brechungswinkel α₂?`,a:rd(a2,1),tol:0.3,unit:'°',ex:`Brechungsgesetz: sin α₁ / sin α₂ = n₂/n₁ → sin α₂ = sin(${a1}°)/${fmt(n2)}, α₂ ≈ ${fmt(a2,1)}°. Zum Lot hin gebrochen.`};};
+
+GEN.p12=()=>{const t=R(0,3);
+ if(t===0){const m=pick([2,5,10,60,1000]),v=pick([2,5,10,20,30]);
+  return {q:`Wie groß ist der Impuls eines Körpers mit m = ${m} kg und v = ${v} m/s?`,a:m*v,tol:0.05,unit:'kg·m/s',ex:`p = m·v = ${m} · ${v} = ${m*v} kg·m/s.`};}
+ if(t===1){const m1=pick([1000,1500]),m2=pick([500,1000,1500]),v1=pick([8,12,16,20]);const v=m1*v1/(m1+m2);
+  return {q:`Ein Wagen (${m1} kg, ${v1} m/s) stößt auf einen ruhenden Wagen (${m2} kg). Beide bleiben aneinander hängen (unelastischer Stoß). Wie schnell sind sie danach?`,a:rd(v,2),tol:0.05,unit:'m/s',ex:`Impulserhaltung: ${m1}·${v1} = (${m1}+${m2})·v' → v' = ${m1*v1}/${m1+m2} ≈ ${fmt(v,2)} m/s.`};}
+ if(t===2){const mb=pick([1,2,3,4]),vb=pick([6,10,12,15]),mS=pick([50,60,75,80]);const v=mb*vb/mS;
+  return {q:`Ein Skater (${mS} kg) steht auf Rollschuhen und wirft einen Ball (${mb} kg) mit ${vb} m/s nach vorn. Wie schnell rollt er (rückwärts) danach?`,a:rd(v,3),tol:0.01,unit:'m/s',ex:`Gesamtimpuls vorher 0: ${mb}·${vb} = ${mS}·v → v = ${fmt(mb*vb/mS,3)} m/s (entgegengesetzte Richtung).`};}
+ if(Math.random()<0.5)return mcq('Was bleibt bei einem <b>unelastischen</b> Stoß in einem abgeschlossenen System erhalten?','nur der Gesamtimpuls',['nur die kinetische Energie','Impuls und kinetische Energie','weder Impuls noch Energie'],'Impulserhaltung gilt immer im abgeschlossenen System. Beim unelastischen Stoß wird ein Teil der kinetischen Energie in Wärme/Verformung umgewandelt.');
+ return mcq('Was bleibt bei einem <b>elastischen</b> Stoß in einem abgeschlossenen System erhalten?','Impuls und kinetische Energie',['nur der Gesamtimpuls','nur die kinetische Energie','weder Impuls noch Energie'],'Elastisch heißt: keine Verformungs- oder Wärmeverluste, daher bleiben beide Größen erhalten.');};
+
+GEN.p13=()=>{const t=R(0,3);
+ if(t===0){const U=pick([100,200,300,500,1000]),d=pick([1,2,4,5,10]);const E=100*U/d;
+  return {q:`An einem Plattenkondensator mit ${d} cm Plattenabstand liegen ${U} V an. Wie groß ist die elektrische Feldstärke im Innern?`,a:E,tol:E*0.005,unit:'V/m',ex:`E = U/d = ${U} V / ${fmt(d/100)} m = ${E} V/m.`};}
+ if(t===1){const C=pick([2,4,10,22,47]),U=pick([5,9,12,24]);
+  return {q:`Ein Kondensator mit C = ${C} µF wird auf ${U} V aufgeladen. Welche Ladung trägt er?`,a:C*U,tol:0.05,unit:'µC',ex:`Q = C·U = ${C} µF · ${U} V = ${C*U} µC.`};}
+ if(t===2){const C=pick([2,4,10,22,47]),U=pick([5,9,12,24]);const Q=C*U;
+  return {q:`Ein Kondensator trägt bei ${U} V die Ladung ${Q} µC. Wie groß ist seine Kapazität?`,a:C,tol:0.05,unit:'µF',ex:`C = Q/U = ${Q} µC / ${U} V = ${C} µF.`};}
+ const q=pick([1,2,5]),E=pick([2,10,50]);
+ return {q:`Eine Ladung von ${q} µC befindet sich in einem homogenen Feld der Stärke ${E} kV/m. Welche Kraft wirkt auf sie?`,a:q*E,tol:0.02,unit:'mN',ex:`F = q·E = ${q}·10⁻⁶ C · ${E}·10³ V/m = ${fmt(q*E/1000,4)} N = ${q*E} mN.`};};
+
+/* ===== Themen und Wissenskarten ===== */
+const TOPICS=[
+{id:'m1',s:'M',n:'Potenzen & Wurzeln',d:'Potenzgesetze, negative und gebrochene Exponenten, Wurzelgesetze.',vq:'Potenzgesetze Wurzelgesetze',cards:[
+ ['Wie lauten die drei Potenzgesetze für gleiche Basis?','aᵐ · aⁿ = a<sup>m+n</sup><br>aᵐ : aⁿ = a<sup>m−n</sup><br>(aᵐ)ⁿ = a<sup>m·n</sup>','Beim Malnehmen werden die Exponenten addiert, nicht multipliziert.'],
+ ['Was bedeuten a<sup>−n</sup> und a<sup>1/n</sup>?','a<sup>−n</sup> = 1/aⁿ (Kehrwert)<br>a<sup>1/n</sup> = ⁿ√a<br>a<sup>m/n</sup> = ⁿ√(aᵐ)','Ein negativer Exponent macht die Zahl nicht negativ.'],
+ ['Welche Wurzelgesetze gibt es, und was gilt nicht?','√a · √b = √(a·b), √(a/b) = √a/√b<br>Aber: √(a+b) ≠ √a + √b','√(9+16) = 5, aber √9 + √16 = 7.']]},
+{id:'m2',s:'M',n:'Logarithmus',d:'Definition, Logarithmengesetze, Exponentialgleichungen lösen.',vq:'Logarithmus Logarithmengesetze',cards:[
+ ['Was bedeutet log<sub>b</sub>(x) = y?','b<sup>y</sup> = x. Der Logarithmus ist der Exponent, mit dem man b potenzieren muss, um x zu erhalten (b > 0, b ≠ 1, x > 0).','lg = Basis 10, ln = Basis e.'],
+ ['Wie lauten die Logarithmengesetze?','log(x·y) = log x + log y<br>log(x/y) = log x − log y<br>log(x<sup>k</sup>) = k · log x'],
+ ['Wie löst man b<sup>x</sup> = N?','x = log N / log b (mit lg oder ln im Taschenrechner).','Beispiel: 2<sup>x</sup> = 20 → x = lg 20 / lg 2 ≈ 4,32.']]},
+{id:'m3',s:'M',n:'Lineare Funktionen & Gleichungssysteme',d:'Steigung, Geradengleichung, Punktprobe, Lösungsverfahren für LGS.',vq:'Lineare Funktionen Geradengleichung lineares Gleichungssystem',cards:[
+ ['Wie berechnet man die Steigung durch zwei Punkte?','m = (y₂ − y₁)/(x₂ − x₁). In f(x) = mx + n ist n der y-Achsenabschnitt.','Reihenfolge in Zähler und Nenner gleich halten.'],
+ ['Wie bestimmt man n, wenn m und ein Punkt bekannt sind?','Punkt in y = mx + n einsetzen und nach n auflösen: n = y₀ − m·x₀.'],
+ ['Welche Verfahren gibt es für lineare Gleichungssysteme?','Einsetzen, Gleichsetzen, Addition. Die Lösung ist der Schnittpunkt der Geraden. Parallele Geraden: keine Lösung, identische Geraden: unendlich viele.']]},
+{id:'m4',s:'M',n:'Quadratische Gleichungen',d:'pq-Formel, Diskriminante, Vieta, Ausklammern.',vq:'quadratische Gleichungen pq-Formel',cards:[
+ ['Wie lautet die pq-Formel?','Für x² + px + q = 0 gilt: x = −p/2 ± √((p/2)² − q).','Vorher durch den Faktor vor x² teilen, damit x² allein steht.'],
+ ['Was sagt die Diskriminante D = (p/2)² − q?','D > 0: zwei Lösungen, D = 0: eine Lösung, D < 0: keine reelle Lösung.'],
+ ['Was besagt der Satz von Vieta und wann klammert man aus?','x₁ + x₂ = −p und x₁ · x₂ = q.<br>Fehlt das konstante Glied (x² + kx = 0): x(x + k) = 0 → x = 0 oder x = −k.']]},
+{id:'m5',s:'M',n:'Quadratische Funktionen',d:'Scheitelform, quadratische Ergänzung, Parabel zeichnen und beschreiben.',vq:'quadratische Funktionen Scheitelform Parabel',cards:[
+ ['Wie liest man den Scheitelpunkt aus f(x) = a(x − d)² + e ab?','S(d | e). Das Vorzeichen in der Klammer wird gedreht: (x + 3)² bedeutet d = −3.'],
+ ['Wie funktioniert die quadratische Ergänzung?','x² + bx + c = (x + b/2)² + c − (b/2)². Der Scheitel ist S(−b/2 | c − b²/4).'],
+ ['Wie beeinflusst a die Parabel?','a > 0: nach oben geöffnet, a < 0: nach unten. |a| > 1: gestreckt (schmaler), |a| < 1: gestaucht (breiter).']]},
+{id:'m6',s:'M',n:'Exponentialfunktionen & Wachstum',d:'Wachstumsfaktor, Zinseszins, Verdopplungszeit, exponentiell vs. linear.',vq:'Exponentialfunktion exponentielles Wachstum Zinseszins',cards:[
+ ['Was bedeuten a und b in f(x) = a · b<sup>x</sup>?','a ist der Startwert f(0), b der Wachstumsfaktor. b > 1: Wachstum, 0 < b < 1: Abnahme.'],
+ ['Wie rechnet man mit Prozent und Zinseszins?','Zunahme um p %: Faktor 1 + p/100. Abnahme: 1 − p/100.<br>K<sub>n</sub> = K₀ · (1 + p/100)<sup>n</sup>','Faktor pro Schritt, dann n-mal anwenden. Nicht p mal n rechnen.'],
+ ['Wie unterscheiden sich lineares und exponentielles Wachstum?','Linear: pro Schritt kommt immer derselbe Betrag dazu (+ c). Exponentiell: pro Schritt wird mit demselben Faktor multipliziert (· b).']]},
+{id:'m7',s:'M',n:'Trigonometrie im rechtwinkligen Dreieck',d:'Sinus, Kosinus, Tangens, Winkel und Seiten berechnen.',vq:'Sinus Kosinus Tangens rechtwinkliges Dreieck',cards:[
+ ['Wie sind sin, cos und tan definiert?','sin α = Gegenkathete/Hypotenuse<br>cos α = Ankathete/Hypotenuse<br>tan α = Gegenkathete/Ankathete'],
+ ['Wie berechnet man einen Winkel aus Seiten?','Mit der Umkehrfunktion: α = sin⁻¹(…), cos⁻¹(…) oder tan⁻¹(…).','Taschenrechner auf DEG (Grad), nicht RAD!'],
+ ['Wie hängen Steigung und Winkel zusammen?','Steigung m = tan α. Beispiel: 100 % Steigung entspricht 45°.']]},
+{id:'m8',s:'M',n:'Sinus- und Kosinussatz',d:'Beliebige Dreiecke berechnen: SWS, SSS, WSW, SsW.',vq:'Sinussatz Kosinussatz',cards:[
+ ['Wie lautet der Sinussatz und wann nutzt man ihn?','a/sin α = b/sin β = c/sin γ. Wenn ein Seiten-Winkel-Paar bekannt ist (WSW, SWW, SsW).'],
+ ['Wie lautet der Kosinussatz und wann nutzt man ihn?','c² = a² + b² − 2ab·cos γ. Bei SWS (zwei Seiten und der eingeschlossene Winkel) und SSS.','Für γ = 90° wird daraus der Satz des Pythagoras.'],
+ ['Was gilt immer in einem Dreieck?','Winkelsumme 180°. Fläche A = ½ · a · b · sin γ.']]},
+{id:'m9',s:'M',n:'Bogenmaß & trigonometrische Funktionen',d:'Gradmaß ↔ Bogenmaß, Sinuskurve, Amplitude, Periode, Spezialwerte.',vq:'Bogenmaß Sinusfunktion Amplitude Periode',cards:[
+ ['Wie rechnet man Grad in Bogenmaß um?','x = α · π/180°. 180° = π, 90° = π/2, 360° = 2π.'],
+ ['Was bedeuten die Parameter in f(x) = a·sin(b(x − c)) + d?','Amplitude |a|, Periode 2π/b, Verschiebung c nach rechts, Mittellinie y = d.'],
+ ['Welche Spezialwerte muss man kennen?','sin: 0° → 0, 30° → ½, 45° → √2/2, 60° → √3/2, 90° → 1. Beim cos genau umgekehrt (cos 0° = 1, cos 60° = ½, cos 90° = 0).']]},
+{id:'m10',s:'M',n:'Ableitung',d:'Steigung der Tangente, Ableitungsregeln, Tangentengleichung.',vq:'Ableitung Ableitungsregeln Potenzregel',cards:[
+ ['Was bedeutet die Ableitung f′(x₀)?','Die Steigung der Tangente im Punkt x₀, also die momentane Änderungsrate. f′(x₀) = lim<sub>h→0</sub> (f(x₀+h) − f(x₀))/h.'],
+ ['Welche Ableitungsregeln braucht man zuerst?','Potenzregel: (xⁿ)′ = n·xⁿ⁻¹. Faktorregel: (c·f)′ = c·f′. Summenregel: (f+g)′ = f′+g′. Konstanten fallen weg.'],
+ ['Wie lautet die Tangente an der Stelle x₀?','y = f′(x₀)·(x − x₀) + f(x₀)','Zuerst f(x₀) und f′(x₀) getrennt ausrechnen.']]},
+{id:'m11',s:'M',n:'Extremstellen & Wendepunkte',d:'Kurvendiskussion: Ableitungen, Nullsetzen, Art bestimmen.',vq:'Extremstellen Wendepunkte Kurvendiskussion',cards:[
+ ['Wie findet man Extremstellen?','f′(x) = 0 lösen. Dann f″ prüfen: f″ > 0 Tiefpunkt, f″ < 0 Hochpunkt.'],
+ ['Wie findet man Wendepunkte?','f″(x) = 0 und f‴(x) ≠ 0. Am Wendepunkt ist die Steigung extremal (stärkster Anstieg oder Abfall).'],
+ ['Welcher typische Fehler passiert beim y-Wert?','Den y-Wert immer in f einsetzen, nicht in f′ oder f″.']]},
+{id:'m12',s:'M',n:'Wahrscheinlichkeit',d:'Laplace, Pfadregeln, mit/ohne Zurücklegen, bedingte Wahrscheinlichkeit.',vq:'Wahrscheinlichkeit Pfadregeln Baumdiagramm',cards:[
+ ['Was ist die Laplace-Wahrscheinlichkeit und das Gegenereignis?','P(A) = günstige/mögliche Ergebnisse. P(nicht A) = 1 − P(A).'],
+ ['Wie lauten die Pfadregeln?','Produktregel: Wahrscheinlichkeiten entlang eines Pfads multiplizieren. Summenregel: Wahrscheinlichkeiten mehrerer Pfade addieren.','Ohne Zurücklegen ändern sich Zähler und Nenner im zweiten Zug.'],
+ ['Was ist bedingte Wahrscheinlichkeit und Unabhängigkeit?','P<sub>A</sub>(B) = P(A∩B)/P(A). A und B sind unabhängig, wenn P(A∩B) = P(A)·P(B).']]},
+{id:'m13',s:'M',n:'Kombinatorik',d:'Fakultät, Anordnungen, Auswahlen, Binomialkoeffizient.',vq:'Kombinatorik Binomialkoeffizient Fakultät',cards:[
+ ['Wie viele Anordnungen gibt es für n Objekte?','n! = n · (n−1) · … · 1'],
+ ['Was ist der Binomialkoeffizient?','C(n,k) = n!/(k!·(n−k)!): Auswahlen von k aus n, Reihenfolge egal (z. B. Lotto).'],
+ ['Welche vier Fälle gibt es beim Ziehen?','Reihenfolge wichtig + Wiederholung: n<sup>k</sup>. Reihenfolge wichtig, ohne Wiederholung: n·(n−1)·…. Reihenfolge egal, ohne Wiederholung: C(n,k).','Erst fragen: Spielt die Reihenfolge eine Rolle? Dann: Darf wiederholt werden?']]},
+{id:'m14',s:'M',n:'Vektoren',d:'Vektor zwischen Punkten, Betrag, Skalarprodukt, Orthogonalität, Geraden.',vq:'Vektoren Skalarprodukt Betrag Orthogonalität',cards:[
+ ['Wie berechnet man den Vektor AB und seine Länge?','AB = B − A (Spitze minus Fuß). |v| = √(x² + y² + z²).'],
+ ['Was ist das Skalarprodukt und was sagt es aus?','a·b = a₁b₁ + a₂b₂ + a₃b₃. Gleich 0 ⇔ a und b orthogonal. Winkel: cos φ = a·b/(|a|·|b|).'],
+ ['Wie lautet eine Geradengleichung im Raum?','g: x = A + t·v (Stützvektor + Parameter · Richtungsvektor). Parallel, wenn die Richtungsvektoren Vielfache sind.']]},
+{id:'m15',s:'M',n:'Körper & Volumen',d:'Volumen und Oberfläche von Zylinder, Kegel, Kugel, Pyramide.',vq:'Volumen Oberfläche Zylinder Kegel Kugel',cards:[
+ ['Wie lauten Volumen und Oberfläche beim Zylinder?','V = π·r²·h, Mantel = 2π·r·h, O = 2π·r·(r + h).'],
+ ['Wie lauten die Formeln für Kegel und Kugel?','Kegel: V = ⅓·π·r²·h. Kugel: V = 4/3·π·r³, O = 4π·r².'],
+ ['Wie rechnet man Einheiten um?','1 m = 10 dm = 100 cm. Beim Volumen mit 10³ = 1000 pro Stufe. 1 l = 1 dm³.','Länge in cm → Volumen in cm³, Fläche in cm².']]},
+
+{id:'p1',s:'P',n:'Geschwindigkeit & gleichförmige Bewegung',d:'v = s/t, Einheiten, Weg-Zeit-Diagramme.',vq:'gleichförmige Bewegung Geschwindigkeit s t Diagramm',cards:[
+ ['Wie lautet die Grundformel der Geschwindigkeit?','v = s/t, also s = v·t und t = s/v.'],
+ ['Wie rechnet man km/h und m/s um?','1 m/s = 3,6 km/h. Von km/h nach m/s: durch 3,6. Von m/s nach km/h: mal 3,6.'],
+ ['Was zeigt ein Weg-Zeit-Diagramm?','Bei gleichförmiger Bewegung ist es eine Gerade; ihre Steigung ist die Geschwindigkeit. Schnittpunkt zweier Geraden = Begegnung.']]},
+{id:'p2',s:'P',n:'Beschleunigte Bewegung',d:'Beschleunigung, s = ½at², Bremsweg, freier Fall.',vq:'beschleunigte Bewegung freier Fall Beschleunigung',cards:[
+ ['Welche Formeln gelten bei Start aus der Ruhe?','a = Δv/Δt, v = a·t, s = ½·a·t², v² = 2·a·s.'],
+ ['Wie groß ist die Fallbeschleunigung?','g = 9,81 m/s² (oft 10 m/s² gerundet), unabhängig von der Masse (ohne Luftwiderstand).'],
+ ['Was gilt für den Anhalteweg?','Anhalteweg = Reaktionsweg + Bremsweg. Der Bremsweg wächst quadratisch mit v: doppelte Geschwindigkeit → vierfacher Bremsweg.']]},
+{id:'p3',s:'P',n:'Kräfte & Newtonsche Gesetze',d:'Trägheit, F = m·a, Gewichtskraft, Hooke, Reibung.',vq:'Newtonsche Gesetze Kraft Gewichtskraft',cards:[
+ ['Wie lauten die drei Newtonschen Gesetze?','1. Trägheit: ohne resultierende Kraft bleibt die Bewegung gleich.<br>2. F = m·a.<br>3. Actio = Reactio: Kräfte wirken auf verschiedene Körper.'],
+ ['Was ist der Unterschied zwischen Masse und Gewichtskraft?','Masse m in kg ist ortsunabhängig. Gewichtskraft F_G = m·g in N hängt vom Ort ab (g = 9,81 N/kg auf der Erde).'],
+ ['Wie lauten Hooke und Reibung?','Hooke: F = D·s (D in N/m). Reibung: F_R = μ·F_N. Die resultierende Kraft ist die Vektorsumme aller Kräfte.']]},
+{id:'p4',s:'P',n:'Arbeit, Energie & Leistung',d:'W = F·s, Energieformen, Wirkungsgrad, Leistung.',vq:'Arbeit Energie Leistung Physik',cards:[
+ ['Wie lauten Arbeit und Leistung?','W = F·s (Kraft in Wegrichtung), Einheit J = N·m. P = W/t, Einheit W = J/s.'],
+ ['Welche Energieformen sollte man kennen?','E_pot = m·g·h, E_kin = ½·m·v², E_Spann = ½·D·s².'],
+ ['Was ist der Wirkungsgrad?','η = E_nutz/E_zu, immer kleiner als 1. Der Rest wird als Wärme „entwertet“, die Energie geht nicht verloren.']]},
+{id:'p5',s:'P',n:'Energieerhaltung',d:'Energieumwandlung ohne und mit Reibung, v = √(2gh).',vq:'Energieerhaltungssatz Mechanik',cards:[
+ ['Was besagt der Energieerhaltungssatz in der Mechanik?','Ohne Reibung bleibt E_pot + E_kin + E_Spann konstant. Energie wird nur umgewandelt.'],
+ ['Wie kommt man auf v = √(2gh)?','m·g·h = ½·m·v². Die Masse kürzt sich: v = √(2·g·h).','Die Fallgeschwindigkeit hängt nicht von der Masse ab.'],
+ ['Was ändert sich mit Reibung?','E_vorher = E_nachher + W_Reibung. Ein Teil der mechanischen Energie wird in Wärme umgewandelt.']]},
+{id:'p6',s:'P',n:'Elektrischer Stromkreis',d:'Ohmsches Gesetz, Reihen- und Parallelschaltung, elektrische Leistung.',vq:'Ohmsches Gesetz Reihenschaltung Parallelschaltung',cards:[
+ ['Wie lautet das Ohmsche Gesetz?','U = R·I (bei konstantem R). Einheiten: V, Ω, A.'],
+ ['Wie unterscheiden sich Reihen- und Parallelschaltung?','Reihe: R = R₁ + R₂, I überall gleich, Spannungen teilen sich.<br>Parallel: 1/R = 1/R₁ + 1/R₂, U gleich, Ströme teilen sich.'],
+ ['Wie berechnet man Leistung und Energie?','P = U·I. Energie E = P·t. 1 kWh = 3,6 MJ.']]},
+{id:'p7',s:'P',n:'Kreisbewegung',d:'Frequenz, Periode, Bahngeschwindigkeit, Zentripetalkraft.',vq:'Kreisbewegung Zentripetalkraft Winkelgeschwindigkeit',cards:[
+ ['Wie hängen T, f und v zusammen?','f = 1/T. Bahngeschwindigkeit v = 2π·r/T = ω·r mit ω = 2π/T.'],
+ ['Wie groß sind Zentripetalbeschleunigung und -kraft?','a_z = v²/r = ω²·r. F_Z = m·v²/r, zum Kreismittelpunkt gerichtet.'],
+ ['Was ist die Zentrifugalkraft?','Eine Scheinkraft im rotierenden Bezugssystem. Im ruhenden System fliegt der Körper ohne Zentripetalkraft tangential geradeaus weiter.']]},
+{id:'p8',s:'P',n:'Wärmelehre',d:'Q = c·m·ΔT, Mischung, Aggregatzustände.',vq:'Wärmelehre spezifische Wärmekapazität Mischungstemperatur',cards:[
+ ['Wie berechnet man die zugeführte Wärme?','Q = c·m·ΔT. Für Wasser c = 4,19 kJ/(kg·K) = 4190 J/(kg·K).'],
+ ['Wie berechnet man eine Mischungstemperatur?','Abgegebene Wärme = aufgenommene Wärme: m₁c₁(T₁ − T_m) = m₂c₂(T_m − T₂). Gleiche Massen und gleiches Material: Mittelwert.'],
+ ['Was passiert bei Aggregatzustandsänderungen?','Während Schmelzen oder Verdampfen bleibt die Temperatur konstant. Die Energie geht in Schmelzwärme Q = q·m bzw. Verdampfungswärme.']]},
+{id:'p9',s:'P',n:'Schwingungen & Wellen',d:'Periode, Frequenz, Pendel, Wellengeschwindigkeit, Schall.',vq:'Schwingungen Wellen Fadenpendel Federpendel',cards:[
+ ['Welche Größen beschreiben eine Schwingung oder Welle?','Amplitude, Periodendauer T, Frequenz f = 1/T, Wellenlänge λ. Ausbreitung: c = λ·f.'],
+ ['Wie lauten die Periodendauern der Pendel?','Fadenpendel: T = 2π·√(l/g) (unabhängig von der Masse). Federpendel: T = 2π·√(m/D).'],
+ ['Wie schnell sind Schall und Licht?','Schall in Luft ≈ 340 m/s (Longitudinalwelle). Licht 3·10⁸ m/s (Transversalwelle). Gewitter: 3 s Verzug ≈ 1 km Entfernung.']]},
+{id:'p10',s:'P',n:'Radioaktivität',d:'α-, β-, γ-Strahlung, Halbwertszeit, Zerfallsgesetz.',vq:'Radioaktivität Halbwertszeit Zerfallsgesetz',cards:[
+ ['Welche drei Strahlungsarten unterscheidet man?','α: Helium-Kerne, Papier schirmt ab. β: Elektronen, wenige mm Aluminium. γ: energiereiche elektromagnetische Strahlung, dickes Blei oder Beton.'],
+ ['Was ist die Halbwertszeit und wie lautet das Zerfallsgesetz?','Zeit, in der die Hälfte der Kerne zerfällt. N(t) = N₀ · (1/2)<sup>t/T½</sup>.'],
+ ['Was misst die Aktivität und wie schützt man sich?','Aktivität A in Bq = Zerfälle pro Sekunde. Schutz durch Abstand, Abschirmung, kurze Zeit.']]},
+{id:'p11',s:'P',n:'Optik: Linsen & Brechung',d:'Brechungsgesetz, Linsengleichung, Abbildungsmaßstab.',vq:'Optik Linsengleichung Brechungsgesetz',cards:[
+ ['Wie lautet das Brechungsgesetz?','sin α₁ / sin α₂ = n₂/n₁. Beim Übergang in ein dichteres Medium wird der Strahl zum Lot hin gebrochen. Ab dem Grenzwinkel gibt es Totalreflexion.'],
+ ['Wie lauten Linsengleichung und Abbildungsmaßstab?','1/f = 1/g + 1/b. B/G = b/g.','g Gegenstandsweite, b Bildweite, f Brennweite.'],
+ ['Welche drei Strahlen konstruiert man bei der Sammellinse?','Parallelstrahl → geht durch den Brennpunkt. Mittelpunktstrahl → geht ungebrochen durch. Brennpunktstrahl → verlässt die Linse parallel.']]},
+{id:'p12',s:'P',n:'Impuls & Stöße',d:'p = m·v, Impulserhaltung, elastischer und unelastischer Stoß.',vq:'Impuls Impulserhaltung Stoß',cards:[
+ ['Was ist der Impuls?','p = m·v, ein Vektor mit Einheit kg·m/s. Kraft als Impulsänderung: F = Δp/Δt.'],
+ ['Was sagt die Impulserhaltung?','In einem abgeschlossenen System ist der Gesamtimpuls konstant: Σp vorher = Σp nachher. Gilt für Stöße und Rückstoß.'],
+ ['Wie unterscheiden sich elastischer und unelastischer Stoß?','Elastisch: Impuls und kinetische Energie bleiben erhalten. Unelastisch: nur der Impuls bleibt erhalten, ein Teil der kinetischen Energie wird zu Wärme.']]},
+{id:'p13',s:'P',n:'Elektrisches Feld & Kondensator',d:'Feldstärke, Plattenkondensator, Kapazität, Kraft auf Ladungen.',vq:'elektrisches Feld Plattenkondensator Kapazität',cards:[
+ ['Wie ist die elektrische Feldstärke definiert?','E = F/q, Einheit V/m = N/C. Im Plattenkondensator ist das Feld homogen: E = U/d.'],
+ ['Was ist die Kapazität eines Kondensators?','C = Q/U, Einheit Farad (F). Gespeicherte Energie: E = ½·C·U².'],
+ ['Wie wirkt das Feld auf Ladungen?','F = q·E. Feldlinien verlaufen von + nach −, dichtere Linien bedeuten stärkeres Feld.']]}
+];
+
+const CHANNELS=[
+ {n:'Daniel Jung',s:'M',d:'Mathe von der Mittelstufe bis zum Abitur, übersichtlich nach Themen sortiert. Gut zum systematischen Nacharbeiten.',q:'Daniel Jung Mathe'},
+ {n:'The Simple Maths (simpleclub)',s:'M',d:'Kurze Videos zum schnellen Auffrischen vor Klassenarbeiten.',q:'The Simple Maths'},
+ {n:'MathemaTrick',s:'M',d:'Aufgaben mit Aha-Effekt und Rechentricks, gut für Neugier und Denkschulung.',q:'MathemaTrick'},
+ {n:'Lehrerschmidt',s:'B',d:'Mathe und Physik, kompakt erklärt, mit Schwerpunkt auf Schulstoff.',q:'Lehrerschmidt'},
+ {n:'simpleclub Physik',s:'P',d:'Kurze Physik-Erklärvideos zu Kinematik, Elektrik, Optik und mehr.',q:'simpleclub Physik'},
+ {n:'Terra X Lesch & Co',s:'P',d:'Harald Lesch erklärt Physik und Astronomie zum Staunen. Gut für Motivation und Hintergrund.',q:'Terra X Lesch & Co'},
+ {n:'3Blue1Brown',s:'B',d:'Englisch mit Untertiteln. Anschauliche Erklärungen zu Analysis und Linearer Algebra, ab Klasse 11 sehr hilfreich.',q:'3Blue1Brown Essence of calculus'}
+];
+const SITES=[
+ {n:'Serlo',d:'Freie Lernplattform mit Erklärungen und Aufgaben zu Mathe.',u:'https://de.serlo.org'},
+ {n:'LEIFIphysik',d:'Ausführliche Physik-Erklärungen, Versuche und Aufgaben nach Schulstufen.',u:'https://www.leifiphysik.de'},
+ {n:'Walter Fendt Applets',d:'Interaktive Physik-Simulationen zum Ausprobieren.',u:'https://www.walter-fendt.de'},
+ {n:'GeoGebra',d:'Funktionen, Vektoren und Geometrie selbst zeichnen und verändern.',u:'https://www.geogebra.org'},
+ {n:'Mathebibel',d:'Nachschlagewerk mit Formeln und Beispielen.',u:'https://www.mathebibel.de'}
+];
+
+if(typeof module!=='undefined')module.exports={GEN,TOPICS,poly,fact,binom,DEG};
+
+/* ===== App ===== */
+const STANDALONE=/*SA*/true;
+const AUTH={"salt": "94e8ad9424a94d90a816a94b", "rounds": 20000, "hash": "3c1febd31ca184577b68920ed38d92ce5e0197b54739514e053d8006fd1081a0", "id": "3c1febd31ca1"};
+const APPV='2026.10.14b';
+const LOGMAX=4000;
+const STATE_V=4;                       // Version des gespeicherten Lernstands. Nur erhöhen, wenn ein Eintrag in MIGR ergänzt wird.
+const STORE_KEY='abitrainer.v2';       // Alter Name, bleibt für immer so: hier liegt der Lernstand im Browser. NIE umbenennen.
+const PACK_KEY='abitrainer.packs';
+
+/* ===== Erweiterungs-Schnittstelle (ABI) =====
+   Neue Funktionen und Inhalte werden hier angemeldet, ohne den Kern zu ändern:
+   ABI.registerTab, ABI.registerAction, ABI.on, ABI.registerTopic, ABI.registerGenerator, ABI.registerPack, ABI.ext(name) */
+const ABI={version:APPV,stateVersion:STATE_V,tabs:[],actions:{},hooks:{},packs:[],
+  on(ev,fn){(this.hooks[ev]=this.hooks[ev]||[]).push(fn);},
+  emit(ev,a){(this.hooks[ev]||[]).forEach(f=>{try{f(a);}catch(e){try{console.error('ABI hook',ev,e);}catch(_){}}});},
+  registerTab(t){if(!t||!t.id||typeof t.view!=='function')return;const i=this.tabs.findIndex(x=>x.id===t.id);if(i>=0)this.tabs[i]=t;else this.tabs.push(t);this.tabs.sort((a,b)=>(a.order||50)-(b.order||50));},
+  registerAction(name,fn){if(typeof fn==='function')this.actions[name]=fn;},
+  ext(name){return (S.ext[name]=S.ext[name]||{});},
+  registerGenerator(id,fn){if(TOP[id]&&typeof fn==='function')GEN[id]=fn;}};
+if(typeof window!=='undefined')window.ABI=ABI;
+const TOP={};TOPICS.forEach(t=>TOP[t.id]=t);
+const $=(s,r=document)=>r.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const KEY=STORE_KEY,KEY1='abitrainer.v1';
+const GOAL=15;
+const today=()=>{const d=new Date();return Math.floor((d.getTime()-d.getTimezoneOffset()*60000)/864e5);};
+const GL={m1:'xⁿ',m2:'log',m3:'y=mx',m4:'pq',m5:'∪',m6:'bˣ',m7:'sin',m8:'c²',m9:'π',m10:'f′',m11:'f″',m12:'P',m13:'n!',m14:'a·b',m15:'V',
+  p1:'v',p2:'a',p3:'F',p4:'W',p5:'E',p6:'Ω',p7:'ω',p8:'Q',p9:'λ',p10:'α',p11:'f',p12:'p',p13:'C'};
+
+/* ----- Zustand ----- */
+const blank=()=>({v:STATE_V,t:{},c:{},h:{},x:0,b:{},n:'',gd:{},u:0,log:[],lx:0,ext:{},meta:{created:0,migrations:[]}});
+function norm(j){const o=blank();if(!j||typeof j!=='object'||!j.t||!j.c||!j.h)return o;
+  o.t=j.t;o.c=j.c;o.h=j.h;o.x=+j.x||0;o.b=j.b||{};o.n=typeof j.n==='string'?j.n:'';o.gd=j.gd||{};o.u=+j.u||0;o.log=Array.isArray(j.log)?j.log:[];o.lx=+j.lx||0;o.ext=j.ext&&typeof j.ext==='object'?j.ext:{};o.meta=j.meta&&typeof j.meta==='object'?{created:+j.meta.created||0,migrations:Array.isArray(j.meta.migrations)?j.meta.migrations:[]}:{created:0,migrations:[]};return o;}
+/* Migrationen: Schlüssel = Version, VON der aus migriert wird. Felder werden nur ergänzt, nie gelöscht. */
+const MIGR={
+  1:j=>{j.x=j.x||0;j.b=j.b||{};j.n=j.n||'';j.gd=j.gd||{};return j;},
+  2:j=>{j.log=Array.isArray(j.log)?j.log:[];j.lx=+j.lx||0;Object.values(j.c||{}).forEach(c=>{if(c.k==null)c.k=0;});return j;},
+  3:j=>{j.ext=j.ext&&typeof j.ext==='object'?j.ext:{};j.meta=j.meta||{created:0,migrations:[]};return j;}
+};
+function migrate(j){let v=+j.v||1;while(v<STATE_V&&MIGR[v]){j=MIGR[v](j);v++;j.v=v;}return j;}
+function load(){for(const k of [KEY,KEY1]){let raw=null;try{raw=localStorage.getItem(k);}catch(e){}
+    if(!raw)continue;let j;
+    try{j=JSON.parse(raw);}catch(e){try{localStorage.setItem('abitrainer.corrupt.'+Date.now(),raw);}catch(_){}continue;}
+    if(!j||!j.t||!j.c||!j.h)continue;
+    const from=+j.v||1,upgrade=from<STATE_V||k===KEY1;
+    if(upgrade){try{localStorage.setItem('abitrainer.backup.v'+from,raw);}catch(e){}j=migrate(j);}
+    const st=norm(j);
+    if(upgrade){st.meta.migrations=[...st.meta.migrations,{from,to:STATE_V,at:Date.now(),app:APPV}].slice(-20);try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}}
+    return st;}
+  return blank();}
+let S=load();
+const stable=o=>JSON.stringify(o,(k,v)=>v&&typeof v==='object'&&!Array.isArray(v)?Object.keys(v).sort().reduce((a,x)=>(a[x]=v[x],a),{}):v);
+function mergeS(a,b){const o=blank();
+  for(const id of new Set([...Object.keys(a.t),...Object.keys(b.t)])){const x=a.t[id],y=b.t[id];o.t[id]=!x?y:!y?x:(y.n>x.n?y:x);}
+  for(const k of new Set([...Object.keys(a.c),...Object.keys(b.c)])){const x=a.c[k],y=b.c[k];o.c[k]=!x?y:!y?x:((y.k||0)>(x.k||0)?y:x);}
+  for(const d of new Set([...Object.keys(a.h),...Object.keys(b.h)])){const x=a.h[d],y=b.h[d];o.h[d]=!x?y:!y?x:(y.n>x.n?y:x);}
+  o.x=Math.max(a.x,b.x);
+  for(const k of new Set([...Object.keys(a.b),...Object.keys(b.b)]))o.b[k]=Math.min(a.b[k]??1e9,b.b[k]??1e9);
+  for(const k of new Set([...Object.keys(a.gd),...Object.keys(b.gd)]))o.gd[k]=1;
+  o.n=(b.u>a.u?(b.n||a.n):(a.n||b.n))||'';o.u=Math.max(a.u,b.u);o.lx=Math.max(a.lx||0,b.lx||0);
+  const seen=new Set(),L=[];for(const e of [...(a.log||[]),...(b.log||[])]){const k=e.t+'|'+e.tp+'|'+e.k+'|'+(e.ci==null?'':e.ci)+'|'+(e.q||'');if(!seen.has(k)){seen.add(k);L.push(e);}}
+  L.sort((x,y)=>x.t-y.t);o.log=L.slice(-LOGMAX);
+  o.ext=b.u>a.u?{...(a.ext||{}),...(b.ext||{})}:{...(b.ext||{}),...(a.ext||{})};
+  const cr=[a.meta&&a.meta.created,b.meta&&b.meta.created].filter(Boolean);o.meta={created:cr.length?Math.min(...cr):0,migrations:[...((a.meta&&a.meta.migrations)||[])]};return o;}
+const T=id=>S.t[id]||(S.t[id]={m:null,n:0,r:0,due:0});
+const total=()=>Object.values(S.t).reduce((a,t)=>a+t.n,0);
+const ui={tab:'home',filter:'all',topic:null,code:'',msg:'',confirm:false,sync:'off',parent:false,reports:null,names:{},repErr:false,viewed:null,packMsg:''};
+let sess=null;
+
+/* ----- Cloud-Sync (db-Fähigkeit, privat pro Konto) ----- */
+const cloud={ref:null,rep:null,id:null,lastRep:'',timer:null,busy:false,again:false,retry:0};
+function setSync(s){if(ui.sync===s)return;ui.sync=s;if(!sess&&!ui.topic&&ui.tab==='me')renderAll();}
+function save(){S.u=Date.now();if(!S.meta.created)S.meta.created=S.u;ABI.emit('save',S);try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}cloudSchedule();}
+function cloudSchedule(){if(!cloud.ref)return;clearTimeout(cloud.timer);cloud.timer=setTimeout(cloudFlush,1500);}
+async function cloudFlush(){if(!cloud.ref)return;if(cloud.busy){cloud.again=true;return;}
+  cloud.busy=true;
+  try{const doc=JSON.parse(JSON.stringify(S));delete doc.log;await cloud.ref.set(doc);cloud.retry=0;setSync('ok');await writeReport();}
+  catch(e){const c=e&&e.code;
+    if(c==='invalid_argument'||c==='revoked'||c==='not_granted'||c==='capability_disabled'){cloud.ref=null;setSync('ro');}
+    else if(c==='quota_exceeded'){cloud.ref=null;setSync('err');}
+    else{setSync('err');if(cloud.retry++<4){clearTimeout(cloud.timer);cloud.timer=setTimeout(cloudFlush,4000+Math.random()*4000);}}}
+  cloud.busy=false;if(cloud.again){cloud.again=false;cloudSchedule();}}
+function makeReport(){const L=lvInfo(S.x||0);let right=0;Object.values(S.t).forEach(t=>right+=t.r);
+  const days=Object.keys(S.h).map(Number).filter(d=>S.h[d].n>0);
+  const th={};TOPICS.forEach(t=>{const s=S.t[t.id];if(s&&s.n)th[t.id]=[Math.round(s.m==null?0:s.m),s.n,s.r];});
+  const h={};for(let i=13;i>=0;i--){const d=today()-i;h[d]=S.h[d]?S.h[d].n:0;}
+  return {n:S.n||'',x:S.x||0,lv:L.L,ti:L.title,st:streak(),tot:total(),ok:right,td:(S.h[today()]||{n:0}).n,ad:days.length,last:days.length?Math.max(...days):null,safe:nSafe(),bd:Object.keys(S.b).length,th,h};}
+async function writeReport(){if(!cloud.rep)return;
+  try{const r=makeReport(),k=stable(r);if(k===cloud.lastRep)return;await cloud.rep.set({...r,u:Date.now()});cloud.lastRep=k;}catch(e){}}
+function onRemote(snap){
+  if(!snap.exists){if(total()>0||S.n||S.x)cloudSchedule();setSync('ok');return;}
+  const rem=norm(JSON.parse(JSON.stringify(snap.data())));const merged=mergeS(S,rem);
+  const sl=o=>stable({...o,log:[]});const localChanged=sl(merged)!==sl(S);
+  if(localChanged){S=merged;try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}if(!sess&&!ui.topic)renderAll();}
+  if(sl(merged)!==sl(rem))cloudSchedule();
+  setSync('ok');}
+async function initCloud(){
+  if(STANDALONE){ui.sync='off';return;}
+  try{const cl=window.claude;if(!cl||!cl.use){setSync('off');return;}
+    setSync('sync');
+    const [db,user]=await Promise.all([cl.use('db'),cl.use('user')]);
+    if(!db||!user){setSync('off');return;}
+    const id=await user.id();if(!id){setSync('off');return;}
+    cloud.id=id;cloud.rep=db.doc('reports/'+id);
+    cloud.ref=db.doc('data/users/'+id+'/state');
+    cloud.ref.onSnapshot(onRemote,e=>{cloud.ref=null;setSync(e&&e.code==='revoked'?'ro':'err');});
+    let isP=false;try{isP=!!(await user.isOwner())||!!(await user.canEdit());}catch(e){}
+    if(isP){ui.parent=true;if(!sess&&!ui.topic)renderAll();
+      db.collection('reports').onSnapshot(async snap=>{
+        const arr=snap.docs.map(d=>({id:d.id,...JSON.parse(JSON.stringify(d.data()))}));
+        try{ui.names=await user.profiles(arr.map(r=>r.id));}catch(e){}
+        ui.reports=arr;ui.repErr=false;if(ui.tab==='parent'&&!sess&&!ui.topic)renderAll();
+      },e=>{ui.reports=ui.reports||[];ui.repErr=true;if(ui.tab==='parent'&&!sess&&!ui.topic)renderAll();});}
+  }catch(e){setSync('off');}}
+
+/* ----- Rang, Level, Abzeichen ----- */
+const TITLES=['Rechen-Rookie','Formel-Fuchs','Kurven-Kenner','Gleichungs-Gigant','Vektor-Virtuose','Physik-Profi','Mathe-Meister','Abi-Legende'];
+const LV=x=>1+Math.floor(Math.sqrt(Math.max(0,x)/60));
+const lvStart=L=>60*(L-1)*(L-1);
+function lvInfo(x){const L=LV(x),a=lvStart(L),b=lvStart(L+1);return {L,a,b,p:Math.min(1,(x-a)/(b-a)),title:TITLES[Math.min(L-1,TITLES.length-1)]};}
+const status=m=>m==null?'neu':m<45?'schwach':m<75?'ueben':'sicher';
+const statusLabel={neu:'Neu',schwach:'Schwach',ueben:'Üben',sicher:'Sicher'};
+const subjName=s=>s==='M'?'Mathe':'Physik';
+const nSafe=()=>TOPICS.filter(t=>status(S.t[t.id]&&S.t[t.id].m)==='sicher').length;
+const BADGES=[
+ {id:'first',g:'1',n:'Erster Schritt',d:'Die erste Antwort gegeben',t:()=>total()>=1},
+ {id:'goal',g:'15',n:'Tagesziel',d:'15 Antworten an einem Tag',t:()=>Object.keys(S.gd).length>=1},
+ {id:'st3',g:'3',n:'Dranbleiber',d:'3 Tage in Folge geübt',t:()=>streak()>=3},
+ {id:'st7',g:'7',n:'Wochenserie',d:'7 Tage in Folge geübt',t:()=>streak()>=7},
+ {id:'st14',g:'14',n:'Zwei Wochen',d:'14 Tage in Folge geübt',t:()=>streak()>=14},
+ {id:'st30',g:'30',n:'Monatsserie',d:'30 Tage in Folge geübt',t:()=>streak()>=30},
+ {id:'combo',g:'×5',n:'Kombo',d:'5 richtige Antworten in Folge',t:()=>sess&&sess.best>=5},
+ {id:'perfect',g:'100%',n:'Perfekte Runde',d:'Eine Runde ohne Fehler (mind. 5)',t:()=>sess&&sess.i>=sess.items.length&&sess.results.length>=5&&sess.results.every(r=>r.ok)},
+ {id:'check',g:'∑',n:'Standort bekannt',d:'Jedes Thema mindestens einmal geprüft',t:()=>TOPICS.every(t=>S.t[t.id]&&S.t[t.id].n>0)},
+ {id:'safe1',g:'★',n:'Sattelfest',d:'Ein Thema auf „Sicher“ gebracht',t:()=>nSafe()>=1},
+ {id:'safe5',g:'5★',n:'Fünf Sterne',d:'Fünf Themen auf „Sicher“',t:()=>nSafe()>=5},
+ {id:'n100',g:'100',n:'Hundertschaft',d:'100 Antworten gegeben',t:()=>total()>=100},
+ {id:'n500',g:'500',n:'Fleißbiene',d:'500 Antworten gegeben',t:()=>total()>=500}];
+function checkBadges(){BADGES.forEach(b=>{if(S.b[b.id]==null&&b.t()){S.b[b.id]=today();if(sess)sess.newB.push(b.id);toast({g:b.g,t:'Neues Abzeichen',s:b.n});}});}
+
+/* ----- Toasts und Konfetti ----- */
+const tq=[];let tbusy=false;
+function toast(o){tq.push(o);if(!tbusy)tnext();}
+function tnext(){const o=tq.shift(),el=$('#toast');if(!el)return;
+  if(!o){tbusy=false;el.className='toast';el.innerHTML='';return;}
+  tbusy=true;el.innerHTML=`<span class="tg">${esc(o.g)}</span><span><b>${esc(o.t)}</b><br><small>${esc(o.s||'')}</small></span>`;el.className='toast show';
+  setTimeout(()=>{el.className='toast';setTimeout(tnext,300);},2500);}
+function burst(n=26){try{if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  const cols=['#ffc42e','#7a4dff','#0b84d4','#e5484d','#1b9e63','#ff7a1a'];
+  for(let i=0;i<n;i++){const e=document.createElement('i');e.className='cf';const a=Math.random()*Math.PI*2,r=90+Math.random()*150;
+    e.style.cssText=`background:${cols[i%cols.length]};--dx:${Math.cos(a)*r}px;--dy:${Math.sin(a)*r+60}px;--r:${Math.random()*720-360}deg`;
+    document.body.appendChild(e);setTimeout(()=>e.remove(),1100);}}catch(e){}}
+
+/* ----- Kobi, das Maskottchen ----- */
+function kobi(mood='happy',size=80,bob=false){
+  const eyes={sleep:'<path d="M28 48q8 6 16 0M56 48q8 6 16 0" stroke="var(--eye)" stroke-width="3.5" fill="none" stroke-linecap="round"/>',
+    oops:'<g class="blink"><circle cx="36" cy="48" r="8.5" fill="#fff"/><circle cx="64" cy="48" r="8.5" fill="#fff"/><circle cx="36" cy="50" r="4.2" fill="var(--eye)"/><circle cx="64" cy="50" r="4.2" fill="var(--eye)"/></g><path d="M25 39l17-6M75 39l-17-6" stroke="var(--eye)" stroke-width="3.5" stroke-linecap="round"/>',
+    think:'<g class="blink"><circle cx="36" cy="48" r="8.5" fill="#fff"/><circle cx="64" cy="48" r="8.5" fill="#fff"/><circle cx="38" cy="45" r="4.2" fill="var(--eye)"/><circle cx="66" cy="45" r="4.2" fill="var(--eye)"/></g>'}[mood]
+    ||'<g class="blink"><circle cx="36" cy="48" r="8.5" fill="#fff"/><circle cx="64" cy="48" r="8.5" fill="#fff"/><circle cx="37" cy="49" r="4.2" fill="var(--eye)"/><circle cx="65" cy="49" r="4.2" fill="var(--eye)"/><circle cx="38.5" cy="47.2" r="1.3" fill="#fff"/><circle cx="66.5" cy="47.2" r="1.3" fill="#fff"/></g>';
+  const mouth={happy:'<path d="M39 65q11 11 22 0" stroke="var(--eye)" stroke-width="3.5" fill="none" stroke-linecap="round"/>',
+    cheer:'<path d="M37 62q13 24 26 0z" fill="var(--eye)"/><path d="M43 71q7-5 14 0q-7 5-14 0z" fill="#ff7a8a"/>',
+    oops:'<path d="M40 73q10-9 20 0" stroke="var(--eye)" stroke-width="3.5" fill="none" stroke-linecap="round"/>',
+    think:'<circle cx="52" cy="68" r="4" fill="none" stroke="var(--eye)" stroke-width="3.2"/>',
+    sleep:'<path d="M43 68q7 5 14 0" stroke="var(--eye)" stroke-width="3.2" fill="none" stroke-linecap="round"/>'}[mood]||'';
+  return `<svg class="kobi${bob?' bob':''}" width="${size}" height="${size}" viewBox="0 0 100 100" role="img" aria-label="Kobi"><line x1="50" y1="14" x2="50" y2="5" stroke="var(--kobi-d)" stroke-width="3.5" stroke-linecap="round"/><circle cx="50" cy="5" r="4.5" fill="var(--kobi-d)"/><path d="M50 12C74 12 91 30 91 54S73 91 50 91 9 78 9 54 26 12 50 12z" fill="var(--kobi)"/><path d="M20 70q-8 6-6 15M80 70q8 6 6 15" stroke="var(--kobi-d)" stroke-width="5" fill="none" stroke-linecap="round" opacity=".0"/><circle cx="23" cy="62" r="6" fill="#ff8aa0" opacity=".55"/><circle cx="77" cy="62" r="6" fill="#ff8aa0" opacity=".55"/>${eyes}${mouth}</svg>`;}
+const FLAME='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.5 2c.6 4 5.5 6.2 5.5 11.4A6 6 0 0 1 12 20a6 6 0 0 1-6-6.6c0-2.1 1-3.6 2.3-4.8.2 1.9 1 3 2.2 3.4C10 8 10.6 4.6 12.5 2z"/></svg>';
+const BOLT='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 2L5 13.5h5.5L9.5 22 19 9.5h-5.8z"/></svg>';
+const CHECK='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+
+/* ----- Antwort-Protokoll ----- */
+const plain=h=>String(h==null?'':h).replace(/<span class="vec">(.*?)<\/span>/g,(m,i)=>'('+i.replace(/<\/i><i>/g,', ').replace(/<[^>]+>/g,'')+')').replace(/<sup>(.*?)<\/sup>/g,'^$1').replace(/<sub>(.*?)<\/sub>/g,'_$1').replace(/<br\s*\/?>/g,' | ').replace(/<[^>]+>/g,'').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/\s+/g,' ').trim();
+function logAns(o){S.log.push({t:Date.now(),d:today(),...o});if(S.log.length>LOGMAX)S.log.splice(0,S.log.length-LOGMAX);}
+const elapsed=()=>sess&&sess.t0?Math.min(Date.now()-sess.t0,600000):null;
+
+/* ----- Lernlogik ----- */
+function record(tid,ok,w){const t=T(tid);t.n++;if(ok)t.r++;
+  if(t.m==null)t.m=ok?72:22;else t.m=t.m*(1-w)+(ok?100:0)*w;
+  const m=t.m;t.due=today()+(m<40?1:m<60?2:m<80?4:9);
+  const d=S.h[today()]||(S.h[today()]={n:0,r:0});d.n++;if(ok)d.r++;}
+function cardResult(tid,ci,ok){const k=tid+'.'+ci;const c=S.c[k]||(S.c[k]={b:0,due:0,k:0});
+  c.b=ok?Math.min(c.b+1,4):0;c.due=today()+(ok?[0,1,3,7,16][c.b]:0);c.k=(c.k||0)+1;record(tid,ok,0.12);}
+function addXp(n){const before=LV(S.x||0);S.x=(S.x||0)+n;if(sess)sess.xp+=n;const after=LV(S.x);
+  if(after>before){if(sess)sess.lvl=after;toast({g:String(after),t:'Level '+after+' erreicht',s:lvInfo(S.x).title});burst(40);}}
+function afterAnswer(ok,kind){const s=sess;
+  if(ok){s.combo++;s.best=Math.max(s.best,s.combo);}else s.combo=0;
+  let gain=kind==='q'?(ok?10:2):(ok?8:3);
+  if(ok&&kind==='q'&&s.combo>=3)gain+=Math.min(s.combo-2,5);
+  addXp(gain);if(s.last)s.last.gain=gain;
+  const td=S.h[today()];
+  if(td&&td.n>=GOAL&&!S.gd[today()]){S.gd[today()]=1;addXp(30);s.goalHit=true;toast({g:'15',t:'Tagesziel geschafft',s:'+30 Bonus-XP'});burst(40);}
+  checkBadges();save();ABI.emit('answer',S.log[S.log.length-1]);}
+function streak(){let d=today();const h=S.h;if(!(h[d]&&h[d].n>0))d--;let n=0;while(h[d]&&h[d].n>0){n++;d--;}return n;}
+function weight(t){const s=S.t[t.id];if(!s||s.m==null)return 3;return (100-s.m)/50+(s.due<=today()?1:0.15);}
+function pickTopics(pool,n,maxDup){const cnt={},out=[];
+  for(let i=0;i<n;i++){const cand=pool.filter(t=>(cnt[t.id]||0)<maxDup);if(!cand.length)break;
+    let r=Math.random()*cand.reduce((a,t)=>a+weight(t),0),ch=cand[cand.length-1];
+    for(const t of cand){r-=weight(t);if(r<=0){ch=t;break;}}
+    out.push(ch);cnt[ch.id]=(cnt[ch.id]||0)+1;}
+  return out;}
+const cdue=(tid,i)=>{const c=S.c[tid+'.'+i];return c?c.due+c.b*0.01:-1;};
+function nextCard(tid,used){const arr=[...Array(TOP[tid].cards.length).keys()].filter(i=>!used.has(tid+'.'+i));
+  if(!arr.length)return null;arr.sort((a,b)=>cdue(tid,a)-cdue(tid,b)||Math.random()-.5);return arr[0];}
+function buildDaily(){
+  const M=TOPICS.filter(t=>t.s==='M'),P=TOPICS.filter(t=>t.s==='P');
+  const qs=[...pickTopics(M,5,2),...pickTopics(P,5,2)].map(t=>({k:'q',tid:t.id}));
+  const used=new Set(),cs=[];
+  [...pickTopics(M,3,2),...pickTopics(P,2,2)].forEach(t=>{const ci=nextCard(t.id,used);if(ci!=null){used.add(t.id+'.'+ci);cs.push({k:'c',tid:t.id,ci});}});
+  return [...cs,...sh(qs)];}
+function startSess(mode,items){sess={mode,items,i:0,t0:0,cur:null,phase:'ask',rev:false,results:[],last:null,combo:0,best:0,xp:0,lvl:0,newB:[],goalHit:false};renderOv();}
+function startDaily(){startSess('Tagesplan',buildDaily());}
+function startCheck(s){let pool=TOPICS.filter(t=>t.s===s&&T(t.id).m==null);if(!pool.length)pool=TOPICS.filter(t=>t.s===s);
+  startSess('Standortcheck',sh(pool.map(t=>({k:'q',tid:t.id}))));}
+function startPractice(id,n=5){startSess('Üben',Array.from({length:n},()=>({k:'q',tid:id})));}
+function startHunt(){const w=TOPICS.filter(t=>S.t[t.id]&&S.t[t.id].m!=null&&S.t[t.id].m<75).sort((a,b)=>S.t[a.id].m-S.t[b.id].m).slice(0,3);
+  if(!w.length)return;startSess('Schwächen-Jagd',Array.from({length:6},(_, i)=>({k:'q',tid:w[i%w.length].id})));}
+function startCards(id){const n=TOP[id].cards.length;const idx=[...Array(n).keys()].sort((a,b)=>cdue(id,a)-cdue(id,b));startSess('Karten',idx.map(ci=>({k:'c',tid:id,ci})));}
+function genQ(tid){for(let i=0;i<5;i++){try{const q=GEN[tid]();if(q&&q.q)return q;}catch(e){}}return {q:'Aufgabe konnte nicht erzeugt werden.',a:0,tol:1,ex:''};}
+
+/* ----- Zahlen lesen ----- */
+function parseNums(raw){let s=String(raw).trim().replace(/\s+/g,'').replace(/[−–]/g,'-');const out=[];if(!s)return out;
+  const conv=x=>{const m=x.match(/^(-?\d*\.?\d+)\/(-?\d*\.?\d+)$/);if(m){const d=parseFloat(m[2]);return d===0?null:parseFloat(m[1])/d;}
+    return /^-?\d*\.?\d+(e-?\d+)?$/i.test(x)?parseFloat(x):null;};
+  const a=conv(s.replace(',','.'));if(a!=null)out.push(a);
+  if(/^-?\d{1,3}(\.\d{3})+(,\d+)?$/.test(s)){const b=conv(s.replace(/\./g,'').replace(',','.'));if(b!=null)out.push(b);}
+  return out;}
+const showNum=a=>fmt(a,3);
+
+/* ----- Lernstand-Datei (Format abi-trainer-progress, schema 1) ----- */
+const FILE_README='Lernstand des Abi-Trainers. Felder: student (Name), profile (xp, level, badges = Abzeichen-ID zu Tag, goalDays = Tage mit erfülltem Tagesziel), topics (je Themen-ID: mastery 0-100, answered, right, dueDay), cards (je Karten-ID Thema.Index: box 0-4, dueDay, seen), daily (Tag zu answered/right), log (jede einzelne Antwort: ts in ms, day, kind question oder card, topic, card, question als Klartext, given, correct, right, skipped, ms). Tage zählen als Tage seit 1970-01-01 in lokaler Zeit (dayEpoch). Unbekannte Felder bitte erhalten und beim Einlesen ignorieren.';
+const FILE_KNOWN=['format','schema','_readme','app','exportedAt','dayEpoch','student','profile','topics','cards','daily','log','extensions'];
+function toFile(){const {__file,...exts}=S.ext||{};return {...(__file||{}),format:'abi-trainer-progress',schema:1,_readme:FILE_README,
+  app:{name:'Abi-Trainer',version:APPV,stateVersion:STATE_V,topics:TOPICS.map(t=>t.id),packs:ABI.packs.map(p=>({id:p.id,version:p.version}))},extensions:exts,exportedAt:new Date().toISOString(),dayEpoch:'days since 1970-01-01, local time',
+  student:{name:S.n||''},
+  profile:{xp:S.x||0,level:LV(S.x||0),badges:S.b,goalDays:S.gd},
+  topics:Object.fromEntries(Object.entries(S.t).map(([id,v])=>[id,{mastery:v.m==null?null:Math.round(v.m*10)/10,answered:v.n,right:v.r,dueDay:v.due}])),
+  cards:Object.fromEntries(Object.entries(S.c).map(([k,v])=>[k,{box:v.b,dueDay:v.due,seen:v.k||0}])),
+  daily:Object.fromEntries(Object.entries(S.h).map(([d,v])=>[d,{answered:v.n,right:v.r}])),
+  log:S.log.map(e=>({ts:e.t,day:e.d,kind:e.k==='c'?'card':'question',topic:e.tp,card:e.ci==null?null:e.ci,question:e.q,given:e.g==null?null:e.g,correct:e.c==null?null:e.c,right:!!e.ok,skipped:!!e.sk,ms:e.ms==null?null:e.ms}))};}
+function fromFile(o){const st=blank();const p=o.profile||{};
+  st.n=(o.student&&typeof o.student.name==='string')?o.student.name:'';st.x=+p.xp||0;st.b=p.badges&&typeof p.badges==='object'?p.badges:{};st.gd=p.goalDays&&typeof p.goalDays==='object'?p.goalDays:{};
+  for(const [id,v] of Object.entries(o.topics||{}))st.t[id]={m:v.mastery==null?null:+v.mastery,n:+v.answered||0,r:+v.right||0,due:+v.dueDay||0};
+  for(const [k,v] of Object.entries(o.cards||{}))st.c[k]={b:+v.box||0,due:+v.dueDay||0,k:+v.seen||0};
+  for(const [d,v] of Object.entries(o.daily||{}))st.h[d]={n:+v.answered||0,r:+v.right||0};
+  st.log=(Array.isArray(o.log)?o.log:[]).map(e=>({t:+e.ts,d:+e.day,k:e.kind==='card'?'c':'q',tp:e.topic,ci:e.card==null?undefined:e.card,q:String(e.question==null?'':e.question),g:e.given==null?null:String(e.given),c:e.correct==null?null:String(e.correct),ok:e.right?1:0,sk:e.skipped?1:0,ms:e.ms==null?null:+e.ms})).filter(e=>e.t&&e.tp);
+  st.ext={...(o.extensions&&typeof o.extensions==='object'?o.extensions:{})};const unk={};Object.keys(o).forEach(k=>{if(!FILE_KNOWN.includes(k))unk[k]=o[k];});if(Object.keys(unk).length)st.ext.__file=unk;
+  st.u=Date.parse(o.exportedAt)||0;return st;}
+function csvFile(){const q=v=>'"'+String(v==null?'':v).replace(/"/g,'""')+'"';
+  const rows=[['Zeit','Tag','Art','Thema','Frage','Gegebene Antwort','Richtige Antwort','Richtig','Übersprungen','Sekunden']];
+  S.log.forEach(e=>rows.push([new Date(e.t).toISOString(),e.d,e.k==='c'?'Karte':'Aufgabe',TOP[e.tp]?TOP[e.tp].n:e.tp,e.q,e.g,e.c,e.ok?'ja':'nein',e.sk?'ja':'',e.ms==null?'':Math.round(e.ms/100)/10]));
+  return '\ufeff'+rows.map(r=>r.map(q).join(';')).join('\r\n');}
+function saveFile(name,text,mime){try{const u=URL.createObjectURL(new Blob([text],{type:mime}));const a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{a.remove();URL.revokeObjectURL(u);},1500);return true;}catch(e){return false;}}
+const dstr=()=>new Date().toISOString().slice(0,10);
+function handleFile(text,mode){let o;
+  try{o=JSON.parse(text);}catch(e){ui.msg='Das ist keine gültige Lernstand-Datei.';return renderAll();}
+  if(!o||o.format!=='abi-trainer-progress'||!o.topics){ui.msg='Das ist keine Lernstand-Datei des Abi-Trainers.';return renderAll();}
+  const newer=(+o.schema||1)>1;const st=fromFile(o);
+  if(mode==='viewIn'){const keep=S;S=st;let r;try{r=makeReport();}finally{S=keep;}
+    ui.viewed={nm:st.n||'Ohne Namen',r,log:st.log,at:o.exportedAt};ui.msg='';}
+  else{S=mergeS(S,st);save();ui.msg=`Lernstand geladen: ${st.log.length} Antworten im Protokoll.${newer?' Die Datei stammt aus einer neueren Version, unbekannte Teile wurden ignoriert.':''}`;}
+  renderAll();}
+
+/* ----- Zugangssperre (Passwort wird nur als Hash gespeichert) ----- */
+const SHA={K:null,H:null};
+function sha256(m){
+  if(!SHA.K){const pr=[];for(let n=2;pr.length<64;n++){let p=true;for(let d=2;d*d<=n;d++)if(n%d===0){p=false;break;}if(p)pr.push(n);}
+    SHA.K=pr.map(p=>Math.floor((Math.cbrt(p)%1)*4294967296));SHA.H=pr.slice(0,8).map(p=>Math.floor((Math.sqrt(p)%1)*4294967296));}
+  const K=SHA.K,h=SHA.H.slice(),l=m.length,nb=((l+9+63)>>6)<<6,b=new Uint8Array(nb);b.set(m);b[l]=0x80;
+  const dv=new DataView(b.buffer);dv.setUint32(nb-8,Math.floor(l*8/4294967296));dv.setUint32(nb-4,(l*8)>>>0);const w=new Uint32Array(64);
+  for(let o=0;o<nb;o+=64){for(let i=0;i<16;i++)w[i]=dv.getUint32(o+i*4);
+    for(let i=16;i<64;i++){const a=w[i-15],c=w[i-2];w[i]=(w[i-16]+(((a>>>7)|(a<<25))^((a>>>18)|(a<<14))^(a>>>3))+w[i-7]+(((c>>>17)|(c<<15))^((c>>>19)|(c<<13))^(c>>>10)))>>>0;}
+    let a=h[0],bb=h[1],c=h[2],d=h[3],e=h[4],f=h[5],g=h[6],hh=h[7];
+    for(let i=0;i<64;i++){const t1=(hh+(((e>>>6)|(e<<26))^((e>>>11)|(e<<21))^((e>>>25)|(e<<7)))+((e&f)^(~e&g))+K[i]+w[i])>>>0;
+      const t2=((((a>>>2)|(a<<30))^((a>>>13)|(a<<19))^((a>>>22)|(a<<10)))+((a&bb)^(a&c)^(bb&c)))>>>0;
+      hh=g;g=f;f=e;e=(d+t1)>>>0;d=c;c=bb;bb=a;a=(t1+t2)>>>0;}
+    h[0]=(h[0]+a)>>>0;h[1]=(h[1]+bb)>>>0;h[2]=(h[2]+c)>>>0;h[3]=(h[3]+d)>>>0;h[4]=(h[4]+e)>>>0;h[5]=(h[5]+f)>>>0;h[6]=(h[6]+g)>>>0;h[7]=(h[7]+hh)>>>0;}
+  const out=new Uint8Array(32),ov=new DataView(out.buffer);h.forEach((x,i)=>ov.setUint32(i*4,x));return out;}
+const U8=s=>new TextEncoder().encode(s);
+function hashPw(pw){const salt=U8(AUTH.salt);let h=sha256(U8(AUTH.salt+'|'+String(pw).trim().toLowerCase()));
+  for(let i=1;i<AUTH.rounds;i++){const x=new Uint8Array(32+salt.length);x.set(h);x.set(salt,32);h=sha256(x);}
+  return Array.from(h).map(x=>x.toString(16).padStart(2,'0')).join('');}
+function authOk(){try{return localStorage.getItem('abitrainer.auth')===AUTH.id||sessionStorage.getItem('abitrainer.auth')===AUTH.id;}catch(e){return false;}}
+const gate={n:0,until:0};
+function showGate(msg){const g=$('#gate');document.documentElement.classList.add('lock');
+  g.innerHTML=`<div class="gate"><form id="gf" class="gate-box" autocomplete="off">${kobi(msg?'oops':'happy',120,true)}<h1>Abi-Trainer</h1><p class="muted">Bitte gib das Passwort ein.</p>
+   <div class="answer-row" style="margin-top:16px"><input class="in" id="pw" type="password" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off" aria-label="Passwort" placeholder="Passwort"><button type="button" class="btn ghost sm" data-act="pwshow" style="min-height:0">Zeigen</button></div>
+   <label class="small" style="display:flex;gap:8px;align-items:center;justify-content:center;margin-top:12px"><input type="checkbox" id="stay" checked> Auf diesem Gerät angemeldet bleiben</label>
+   <div class="err" id="gerr" role="alert">${msg||''}</div><button class="btn wide" type="submit" id="gbtn">Los geht’s</button></form></div>`;
+  setTimeout(()=>{const p=$('#pw');if(p&&p.focus)p.focus();},50);}
+function tryUnlock(){const pw=$('#pw').value,stay=$('#stay').checked;
+  if(Date.now()<gate.until){$('#gerr').textContent='Bitte kurz warten und noch einmal versuchen.';return;}
+  $('#gbtn').disabled=true;$('#gerr').textContent='Prüfe …';
+  setTimeout(()=>{if(hashPw(pw)===AUTH.hash){try{(stay?localStorage:sessionStorage).setItem('abitrainer.auth',AUTH.id);}catch(e){}
+      gate.n=0;$('#gate').innerHTML='';document.documentElement.classList.remove('lock');boot();}
+    else{gate.n++;if(gate.n>=5)gate.until=Date.now()+Math.min(30000,(gate.n-4)*5000);showGate('Das Passwort stimmt nicht.');}},30);}
+function logout(){try{localStorage.removeItem('abitrainer.auth');sessionStorage.removeItem('abitrainer.auth');}catch(e){}
+  sess=null;ui.topic=null;$('#main').innerHTML='';$('#nav').innerHTML='';$('#ov').innerHTML='';showGate();}
+
+/* ----- Inhaltspakete (nur Daten, kein Code) ----- */
+const safeHtml=t=>esc(t==null?'':t).replace(/&lt;(\/?)(sup|sub|b|i|br)&gt;/g,'<$1$2>');
+const CORE_IDS=new Set(TOPICS.map(t=>t.id));
+function staticGen(list){return()=>{const it=list[Math.floor(Math.random()*list.length)];
+  if(Array.isArray(it.options)){const right=it.options[it.correct];const opts=sh(it.options.slice());return {q:it.q,mc:opts,c:opts.indexOf(right),ex:it.ex||''};}
+  return {q:it.q,a:+it.a,tol:it.tol!=null?+it.tol:0.001,unit:it.unit||'',ex:it.ex||''};};}
+function validatePack(p){const bad=m=>{throw new Error(m);};
+  if(!p||p.format!=='abi-trainer-pack'||(+p.schema||0)<1)bad('Das ist kein Fragenpaket.');
+  if(!/^[a-z][a-z0-9_-]{1,30}$/.test(p.id||''))bad('Paket-ID fehlt oder ist ungültig.');
+  if(!Array.isArray(p.topics)||!p.topics.length||p.topics.length>100)bad('Keine Themen im Paket.');
+  const ids=new Set();
+  p.topics.forEach(t=>{if(!/^[a-z][a-z0-9_]{1,24}$/.test(t.id||''))bad('Themen-ID ungültig: '+t.id);
+    if(CORE_IDS.has(t.id))bad('Themen-ID gehört zur App: '+t.id);if(ids.has(t.id))bad('Themen-ID doppelt: '+t.id);ids.add(t.id);
+    if(t.s!=='M'&&t.s!=='P')bad('Fach muss M oder P sein: '+t.id);if(!t.n||!t.d)bad('Name oder Beschreibung fehlt: '+t.id);
+    if(!Array.isArray(t.cards)||t.cards.some(c=>!Array.isArray(c)||c.length<2))bad('Karten ungültig: '+t.id);
+    if(!Array.isArray(t.questions)||!t.questions.length||t.questions.length>2000)bad('Fragen fehlen: '+t.id);
+    t.questions.forEach(q=>{if(!q.q)bad('Frage ohne Text: '+t.id);
+      if(Array.isArray(q.options)){if(q.options.length<2||q.options.length>6||!(q.correct>=0&&q.correct<q.options.length))bad('Auswahlfrage ungültig: '+t.id);}
+      else if(!Number.isFinite(+q.a))bad('Antwort ist keine Zahl: '+t.id);});});
+  return p;}
+function unregisterPack(id){const p=ABI.packs.find(x=>x.id===id);if(!p)return;
+  p.topics.forEach(t=>{const i=TOPICS.findIndex(x=>x.id===t.id);if(i>=0)TOPICS.splice(i,1);delete TOP[t.id];delete GL[t.id];delete GEN[t.id];});
+  ABI.packs=ABI.packs.filter(x=>x.id!==id);}
+function registerPack(p){validatePack(p);unregisterPack(p.id);
+  p.topics.forEach(t=>{const top={id:t.id,s:t.s,n:safeHtml(t.n),d:safeHtml(t.d),vq:t.vq||t.n,pack:p.id,
+      cards:t.cards.map(c=>[safeHtml(c[0]),safeHtml(c[1]),c[2]?safeHtml(c[2]):'']),};
+    const qs=t.questions.map(q=>({...q,q:safeHtml(q.q),ex:safeHtml(q.ex||''),options:Array.isArray(q.options)?q.options.map(safeHtml):undefined}));
+    TOPICS.push(top);TOP[t.id]=top;GL[t.id]=String(t.g||t.n[0]).slice(0,4);GEN[t.id]=staticGen(qs);});
+  ABI.packs.push(p);}
+function savePacks(){try{localStorage.setItem(PACK_KEY,JSON.stringify(ABI.packs));}catch(e){}}
+function loadPacks(){try{const arr=JSON.parse(localStorage.getItem(PACK_KEY)||'[]');(Array.isArray(arr)?arr:[]).forEach(p=>{try{registerPack(p);}catch(e){}});}catch(e){}}
+ABI.registerTopic=function(t){if(!t||!t.id||TOP[t.id])return false;TOPICS.push(t);TOP[t.id]=t;GL[t.id]=t.g||String(t.n||'?')[0];if(typeof t.gen==='function')GEN[t.id]=t.gen;return true;};
+ABI.registerPack=function(p){registerPack(p);savePacks();};
+
+/* ----- Bausteine ----- */
+const ICON={
+ home:'<path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-4v-5h-6v5H5a1 1 0 0 1-1-1z"/>',
+ topics:'<rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/>',
+ videos:'<rect x="3" y="5" width="18" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/>',
+ me:'<circle cx="12" cy="8" r="4"/><path d="M4 20c1-4 4-6 8-6s7 2 8 6"/>',
+ parent:'<path d="M4 20V9M10 20V4M16 20v-7M21 20H3"/>'};
+function header(){return `<div class="top"><div class="brand">${kobi('happy',34)}<span>Abi-Trainer</span></div><div class="chips"><span class="pill fire" title="Tage in Folge" aria-label="${streak()} Tage in Folge">${FLAME}${streak()}</span><span class="pill bolt" title="Erfahrungspunkte" aria-label="${S.x||0} XP">${BOLT}${S.x||0}</span></div></div>`;}
+function navHtml(){const items=ABI.tabs.filter(t=>!t.show||t.show());
+  return `<div style="--n:${items.length}">${items.map(t=>`<button data-act="tab" data-id="${t.id}" ${ui.tab===t.id?'aria-current="page"':''}><svg viewBox="0 0 24 24" aria-hidden="true">${t.icon}</svg>${esc(t.label)}</button>`).join('')}</div>`;}
+function tile(t){const s=T(t.id),st=status(s.m);const m=s.m==null?0:Math.max(6,s.m);
+  return `<button class="tile s${t.s}" data-act="open" data-id="${t.id}" aria-label="${esc(t.n)}, ${statusLabel[st]}"><span class="ring"><svg viewBox="0 0 64 64" aria-hidden="true"><circle class="rb" cx="32" cy="32" r="27"/><circle class="rf st-${st}" cx="32" cy="32" r="27" stroke-dasharray="${(m/100*169.6).toFixed(1)} 169.6" transform="rotate(-90 32 32)"/></svg><b class="gl">${GL[t.id]||''}</b></span><span class="tn">${esc(t.n).replace(/(?<=[a-zäöü])(funktionen|gleichungen|gleichungssysteme)/g,"\u00ad$1")}</span><span class="chip st-${st}">${statusLabel[st]}</span></button>`;}
+
+/* ----- Heute ----- */
+function viewHome(){
+  const td=S.h[today()]||{n:0,r:0};const done=Math.min(td.n,GOAL);const L=lvInfo(S.x||0);
+  const checkedM=TOPICS.filter(t=>t.s==='M'&&T(t.id).m==null).length,checkedP=TOPICS.filter(t=>t.s==='P'&&T(t.id).m==null).length;
+  const weak=TOPICS.filter(t=>{const m=T(t.id).m;return m!=null&&m<75;}).sort((a,b)=>T(a.id).m-T(b.id).m);
+  const tot=total();const st=streak();
+  let msg,mood='happy';
+  if(tot===0)msg='Hi, ich bin Kobi! Starte den Standortcheck, dann weiß ich, wo wir ansetzen.';
+  else if(td.n>=GOAL){msg='Tagesziel geschafft! Alles weitere ist Bonus.';mood='cheer';}
+  else if(td.n>0)msg=`Noch ${GOAL-td.n} bis zum Tagesziel. Du schaffst das!`;
+  else if(st>=2){msg=`${st} Tage in Folge! Halte die Serie am Leben.`;mood='think';}
+  else msg='Bereit? Für heute reichen 15 Minuten.';
+  const dow=(new Date().getDay()+6)%7,wl=['Mo','Di','Mi','Do','Fr','Sa','So'];
+  let h='<div class="stack">';
+  h+=`<div class="hero"><div class="hero-l"><span class="hl">Level ${L.L}</span><h2>Hallo${S.n?', '+esc(S.n):''}!</h2><p class="ttl">${esc(L.title)}</p><div class="xpbar" role="progressbar" aria-valuenow="${Math.round(L.p*100)}" aria-valuemin="0" aria-valuemax="100"><i style="width:${Math.round(L.p*100)}%"></i></div><small>${(S.x||0)-L.a} von ${L.b-L.a} XP bis Level ${L.L+1}</small></div>
+   <div class="hero-r"><div class="bubble">${esc(msg)}</div>${kobi(mood,92,true)}</div></div>`;
+  h+=`<div class="card"><div class="week" aria-label="Diese Woche">${wl.map((l,i)=>{const d=today()-dow+i,hh=S.h[d],cls=(hh&&hh.n>=GOAL?'goal ':hh&&hh.n>0?'done ':'')+(i===dow?'now':'');return `<div class="${cls}"><i>${hh&&hh.n>0?CHECK:''}</i>${l}</div>`;}).join('')}</div></div>`;
+  h+=`<div class="card"><span class="eyebrow">Tagesplan</span><h2>${td.n>=GOAL?'Geschafft! Noch eine Runde?':'5 Karten, 10 Aufgaben'}</h2>
+   <div class="row2" style="margin:12px 0 4px;flex-wrap:nowrap"><div class="bar g" role="progressbar" aria-valuenow="${done}" aria-valuemin="0" aria-valuemax="${GOAL}"><i style="width:${Math.round(done/GOAL*100)}%"></i></div><span class="cnt">${done}/${GOAL}</span></div>
+   <p class="small muted" style="margin-bottom:14px">Schwache Themen kommen öfter dran. Dauert etwa 15 Minuten. Tagesziel erreicht: +30 Bonus-XP.</p>
+   <button class="btn gold wide" data-act="daily">${td.n>0&&td.n<GOAL?'Weiter geht’s':td.n>=GOAL?'Noch eine Runde':'Los geht’s'}</button></div>`;
+  if(STANDALONE&&tot>=20&&(!S.lx||today()-S.lx>7))h+=`<div class="card"><span class="eyebrow">Sicherung</span><h3>Zeit, den Lernstand zu speichern</h3><p class="small muted" style="margin:6px 0 12px">Das geht in einer Minute und schützt vor Datenverlust, falls der Browser aufräumt.</p><button class="btn sm ghost" data-act="tab" data-id="me">Zu „Ich“</button></div>`;
+  if(checkedM+checkedP>0){
+    h+=`<div class="card"><span class="eyebrow">Standortcheck</span><h3>${tot===0?'Was sitzt schon, was nicht?':`${checkedM+checkedP} Themen noch nicht geprüft`}</h3>
+     <p class="small muted" style="margin:6px 0 14px">Eine Frage pro Thema. „Weiß ich nicht“ ist erlaubt und hilft am meisten: So sieht Kobi genau, wo geübt werden muss.</p>
+     <div class="row2">${checkedM?`<button class="btn ghost" data-act="check" data-id="M">Mathe (${checkedM})</button>`:''}${checkedP?`<button class="btn ghost" data-act="check" data-id="P">Physik (${checkedP})</button>`:''}</div></div>`;}
+  if(weak.length){
+    h+=`<div class="card"><span class="eyebrow">Schwächen-Jagd</span><h3 style="margin-bottom:12px">Hier gibt es am meisten zu holen</h3><div class="grid">${weak.slice(0,4).map(tile).join('')}</div><button class="btn ghost wide" style="margin-top:14px" data-act="hunt">6 Aufgaben aus den schwächsten Themen</button></div>`;}
+  if(tot===0){
+    h+=`<div class="card"><span class="eyebrow">So funktioniert es</span><div class="ref"><b>Standortcheck</b>Kobi prüft jedes Thema einmal und merkt sich, wo es hakt.</div><div class="ref"><b>Tagesplan</b>Jeden Tag gemischte Aufgaben und Wissenskarten. Die Zahlen sind jedes Mal neu.</div><div class="ref"><b>XP und Abzeichen</b>Richtige Antworten, Serien und Kombos bringen Punkte, Level und Abzeichen.</div><div class="ref"><b>Videos</b>Zu jedem Thema gibt es passende Erklärvideos.</div></div>`;}
+  return h+'</div>';}
+
+/* ----- Themen ----- */
+function viewTopics(){
+  const f=ui.filter;const list=TOPICS.filter(t=>f==='all'||t.s===f);
+  let h=`<div class="stack"><div class="seg" role="group" aria-label="Fach">${[['all','Alle'],['M','Mathe'],['P','Physik']].map(([k,l])=>`<button data-act="filter" data-id="${k}" aria-pressed="${f===k}">${l}</button>`).join('')}</div>
+   <p class="small muted">Der Ring zeigt, wie sicher ein Thema sitzt: rot ist schwach, gelb ist Üben, grün ist sicher. Tippe ein Thema an.</p>`;
+  ['M','P'].forEach(s=>{const items=list.filter(t=>t.s===s);if(!items.length)return;
+    h+=`<div class="group-h"><h2>${s==='M'?'Mathematik':'Physik'}</h2><span class="muted small">${items.filter(t=>status(T(t.id).m)==='sicher').length} von ${items.length} sicher</span></div><div class="grid">${items.map(tile).join('')}</div>`;});
+  return h+'</div>';}
+
+/* ----- Videos ----- */
+const yt=q=>'https://www.youtube.com/results?search_query='+encodeURIComponent(q);
+function vlinks(t){const gen=t.s==='M'?'Mathe':'Physik';const a=t.s==='M'?['Daniel Jung','The Simple Maths']:['Lehrerschmidt','simpleclub'];
+  return `<div class="links"><a class="btn sm ghost" href="${yt(t.vq+' '+gen+' Schule erklärt')}" target="_blank" rel="noopener">Erklärvideos</a><a class="btn sm ghost" href="${yt(t.vq+' '+a[0])}" target="_blank" rel="noopener">${a[0]}</a><a class="btn sm ghost" href="${yt(t.vq+' '+a[1])}" target="_blank" rel="noopener">${a[1]}</a></div>`;}
+function viewVideos(){
+  let h='<div class="stack"><div class="card"><span class="eyebrow">Kanäle</span><div>';
+  CHANNELS.forEach(c=>{h+=`<div class="ch"><span class="av ${c.s}" aria-hidden="true">${esc(c.n[0])}</span><b>${esc(c.n)} <span class="tag ${c.s==='B'?'':'s'+c.s}" style="margin-left:4px">${c.s==='M'?'Mathe':c.s==='P'?'Physik':'Beides'}</span></b><p class="small muted">${esc(c.d)}</p><div><a class="btn sm ghost" href="${yt(c.q)}" target="_blank" rel="noopener">Auf YouTube suchen</a></div></div>`;});
+  h+=`</div><p class="small muted" style="margin-top:10px">Die Links sind YouTube-Suchen, damit nichts ins Leere läuft. Welcher Erklärstil passt, merkt man nach zwei, drei Videos.</p></div>`;
+  h+='<div class="card"><span class="eyebrow">Zum Nachschlagen und Ausprobieren</span><div>';
+  SITES.forEach(s=>{h+=`<div class="ref"><a href="${s.u}" target="_blank" rel="noopener"><b>${esc(s.n)}</b></a>${esc(s.d)}</div>`;});
+  h+='</div></div>';
+  ['M','P'].forEach(s=>{h+=`<details class="card"><summary>Videos nach Thema: ${subjName(s)}</summary><div style="margin-top:8px">${TOPICS.filter(t=>t.s===s).map(t=>`<div class="ref"><b>${esc(t.n)}</b>${vlinks(t)}</div>`).join('')}</div></details>`;});
+  return h+'</div>';}
+
+/* ----- Ich ----- */
+const SYNCTXT={ok:['ok','Gesichert. Dein Lernstand wird automatisch gespeichert und auf all deinen Geräten abgeglichen, auf denen du mit deinem Konto angemeldet bist.'],
+  sync:['sync','Verbinde …'],
+  off:['','Nur auf diesem Gerät gespeichert. Melde dich im Browser mit deinem Claude-Konto an und öffne die Seite erneut, damit der Lernstand mitwandert.'],
+  ro:['err','Dein Konto darf hier nichts in der Cloud speichern. Bitte die Person, die den Link geteilt hat, dir die Stufe „Mitwirkender“ zu geben. Bis dahin bleibt der Lernstand auf diesem Gerät.'],
+  err:['err','Die Cloud ist gerade nicht erreichbar. Dein Lernstand liegt sicher auf diesem Gerät und wird später erneut übertragen.']};
+function viewMe(){
+  const L=lvInfo(S.x||0);const t0=total(),right=Object.values(S.t).reduce((a,t)=>a+t.r,0);
+  const days=Object.values(S.h).filter(d=>d.n>0).length;
+  const td=today();const arr=[];for(let i=13;i>=0;i--){const d=S.h[td-i];arr.push({n:d?d.n:0,w:new Date(Date.now()-i*864e5).getDay()});}
+  const mx=Math.max(GOAL,...arr.map(a=>a.n));const wd=['So','Mo','Di','Mi','Do','Fr','Sa'];
+  const sy=SYNCTXT[ui.sync]||SYNCTXT.off;
+  let h='<div class="stack">';
+  h+=`<div class="hero"><div class="hero-l"><span class="hl">Level ${L.L}</span><h2>${S.n?esc(S.n):'Dein Profil'}</h2><p class="ttl">${esc(L.title)}</p><div class="xpbar"><i style="width:${Math.round(L.p*100)}%"></i></div><small>${S.x||0} XP insgesamt</small></div><div class="hero-r">${kobi('happy',84,true)}</div></div>`;
+  h+=`<div class="card"><label class="eyebrow" for="nameIn">Wie soll Kobi dich nennen?</label><input class="name-in" id="nameIn" type="text" maxlength="24" autocomplete="off" value="${esc(S.n)}" placeholder="Dein Vorname"></div>`;
+  h+=`<div class="nums"><div><b>${t0}</b><span>Antworten</span></div><div><b>${t0?Math.round(100*right/t0):0} %</b><span>richtig</span></div><div><b>${days}</b><span>aktive Tage</span></div><div><b>${nSafe()}/${TOPICS.length}</b><span>Themen sicher</span></div></div>`;
+  h+=`<div class="card"><span class="eyebrow">Abzeichen (${Object.keys(S.b).length} von ${BADGES.length})</span><div class="badges">${BADGES.map(b=>{const on=S.b[b.id]!=null;return `<div class="bd ${on?'':'lock'}"><span class="g">${on?esc(b.g):'?'}</span><b>${esc(b.n)}</b><small>${esc(b.d)}</small></div>`;}).join('')}</div></div>`;
+  h+=`<div class="card"><span class="eyebrow">Letzte 14 Tage (Antworten pro Tag)</span><div class="bars">${arr.map(a=>`<div><b class="${a.n?'':'zero'}" style="height:${a.n?Math.max(4,Math.round(a.n/mx*100)):3}%" title="${a.n}"></b><span>${wd[a.w]}</span></div>`).join('')}</div></div>`;
+  ['M','P'].forEach(s=>{const items=TOPICS.filter(t=>t.s===s).sort((a,b)=>{const x=T(a.id).m,y=T(b.id).m;return (x==null?-1:x)-(y==null?-1:y);});
+    h+=`<div class="card"><span class="eyebrow">${subjName(s)}: schwächste zuerst</span>${items.map(t=>{const st=status(T(t.id).m);return `<div class="res"><button class="link" style="text-align:left;color:var(--ink);text-decoration:none;padding:6px 0;min-height:36px" data-act="open" data-id="${t.id}">${esc(t.n)}</button><span class="chip st-${st}">${statusLabel[st]}</span></div>`;}).join('')}</div>`;});
+  h+=STANDALONE?fileCards():cloudCards();
+  h+=`<div class="card"><span class="eyebrow">Zurücksetzen</span>${ui.confirm?`<p class="small" style="margin-bottom:10px">${STANDALONE?'Wirklich alles löschen? Speichere vorher eine Datei, wenn du den Lernstand behalten willst. Das lässt sich nicht rückgängig machen.':'Wirklich alles löschen, auf diesem Gerät und in der Cloud? Das lässt sich nicht rückgängig machen. Auf anderen Geräten, auf denen die Seite gerade offen ist, bitte ebenfalls zurücksetzen.'}</p><div class="row2"><button class="btn sm no" data-act="reset2">Ja, alles löschen</button><button class="btn sm ghost" data-act="reset0">Abbrechen</button></div>`:`<button class="btn sm no" data-act="reset1">Lernstand löschen</button>`}</div>`;
+  return h+'</div>';}
+
+/* ----- Eltern ----- */
+function ago(d){if(d==null)return 'noch nie';const k=today()-d;return k<=0?'heute':k===1?'gestern':`vor ${k} Tagen`;}
+function errItems(log,n){const w=log.filter(e=>!e.ok&&TOP[e.tp]).slice(-n).reverse();
+  return w.length?w.map(e=>{const q=String(e.q||'');return `<div class="ref"><span class="chip">${esc(TOP[e.tp].n)}</span><div style="margin:6px 0 4px">${esc(q.length>170?q.slice(0,170)+'…':q)}</div>${e.k==='c'?'<span class="small muted">Karte nicht gewusst</span>':`${e.sk?'<span class="small muted">Übersprungen.</span><br>':`<span class="small">Antwort: <span class="strike">${esc(e.g==null?'':e.g)}</span></span><br>`}<span class="small">Richtig: <b>${esc(e.c||'')}</b></span>`}</div>`;}).join(''):'<p class="small muted">Noch keine falschen Antworten.</p>';}
+function reportCard(r,nm,isMe,extra){
+  const th=Object.entries(r.th||{}).map(([id,v])=>({id,m:v[0],n:v[1]})).filter(x=>TOP[x.id]).sort((a,b)=>a.m-b.m);
+  const weak=th.filter(x=>x.m<75).slice(0,6),open=TOPICS.length-th.length;
+  const days=[];for(let i=13;i>=0;i--)days.push((r.h&&r.h[today()-i])||0);const mx=Math.max(GOAL,...days);
+  const active=r.last!=null&&today()-r.last<=1;
+  return `<div class="card"><div class="row2" style="justify-content:space-between;flex-wrap:nowrap"><div style="min-width:0"><h2 style="overflow-wrap:anywhere">${esc(nm)}${isMe?' <span class="tag">du</span>':''}</h2><p class="small muted">Level ${r.lv||1}, ${esc(r.ti||'')}</p></div><span class="chip st-${active?'sicher':'schwach'}">Zuletzt aktiv: ${ago(r.last)}</span></div>
+     <div class="nums" style="margin-top:14px"><div><b>${r.td||0}/${GOAL}</b><span>heute</span></div><div><b>${r.st||0}</b><span>Tage in Folge</span></div><div><b>${r.tot?Math.round(100*(r.ok||0)/r.tot):0} %</b><span>richtig (${r.tot||0} Antworten)</span></div><div><b>${r.safe||0}/${TOPICS.length}</b><span>Themen sicher</span></div></div>
+     <span class="eyebrow" style="margin-top:16px">Letzte 14 Tage</span><div class="bars">${days.map((n,i)=>`<div><b class="${n?'':'zero'}" style="height:${n?Math.max(4,Math.round(n/mx*100)):3}%" title="${n}"></b><span>${['So','Mo','Di','Mi','Do','Fr','Sa'][new Date(Date.now()-(13-i)*864e5).getDay()]}</span></div>`).join('')}</div>
+     <span class="eyebrow" style="margin-top:16px">Hier hakt es noch</span>${weak.length?weak.map(x=>{const st=status(x.m);return `<div class="res"><span>${esc(TOP[x.id].n)}</span><span class="chip st-${st}">${statusLabel[st]}</span></div>`;}).join(''):'<p class="small muted">Keine schwachen Themen unter den geprüften.</p>'}
+     ${open>0?`<p class="small muted" style="margin-top:8px">${open} Themen noch nicht geprüft.</p>`:''}${extra||''}</div>`;}
+function viewParent(){
+  const rs=ui.reports;let h='<div class="stack">';
+  h+=`<div class="card"><span class="eyebrow">Für Eltern</span><h2>Lernfortschritt</h2><p class="small muted" style="margin-top:6px">Hier siehst du, wie jede Person übt, die diese Seite mit eigenem Konto nutzt. Die Antworten im Einzelnen bleiben privat, du siehst nur die Zusammenfassung.</p></div>`;
+  if(rs===null)return h+'<div class="card"><p class="muted">Lade …</p></div></div>';
+  if(!rs.length){
+    h+=`<div class="card"><h3>Noch nichts zu sehen</h3><p class="small muted" style="margin:6px 0 12px">${ui.repErr?'Die Übersicht konnte nicht geladen werden. Bitte später erneut öffnen.':'Sobald deine Tochter die Seite mit ihrem eigenen Konto öffnet und die erste Aufgabe löst, erscheint ihr Fortschritt hier.'}</p></div>`;}
+  rs.slice().sort((a,b)=>(b.u||0)-(a.u||0)).forEach(r=>{const p=ui.names&&ui.names[r.id];h+=reportCard(r,(p&&p.name)||r.n||'Ohne Namen',!!(p&&p.isMe));});
+  return h+'</div>';}
+
+function cloudCards(){const sy=SYNCTXT[ui.sync]||SYNCTXT.off;let h='';
+  h+=`<div class="card"><span class="eyebrow">Speichern und Synchronisieren</span><div class="sync"><span class="dot ${sy[0]}" aria-hidden="true"></span><p class="small" role="status">${sy[1]}</p></div></div>`;
+  h+=`<div class="card"><span class="eyebrow">Als App auf den Startbildschirm</span><p class="small" style="margin-bottom:8px"><b>iPhone oder iPad (Safari):</b> Teilen-Symbol antippen, dann „Zum Home-Bildschirm“.</p><p class="small"><b>Android (Chrome):</b> Menü ⋮ öffnen, dann „Zum Startbildschirm hinzufügen“ oder „App installieren“.</p></div>`;
+  h+=`<details class="card"><summary>Sicherungscode (falls die Cloud nicht geht)</summary><p class="small muted" style="margin:8px 0 10px">Mit dem Code lässt sich der Lernstand von Hand auf ein anderes Gerät übertragen.</p>
+   <div class="row2"><button class="btn sm ghost" data-act="exp">Code anzeigen</button>${ui.code?'<button class="btn sm ghost" data-act="copy">Kopieren</button>':''}</div>
+   ${ui.code?`<textarea class="code" id="codeOut" readonly aria-label="Sicherungscode">${esc(ui.code)}</textarea>`:''}
+   <label class="small muted" for="codeIn" style="display:block;margin-top:14px">Code einfügen und wiederherstellen</label>
+   <textarea class="code" id="codeIn" placeholder="Code hier einfügen" style="min-height:64px"></textarea>
+   <div class="row2" style="margin-top:8px"><button class="btn sm ghost" data-act="imp">Wiederherstellen</button></div>
+   <p class="small" id="msg" role="status" style="margin-top:8px">${esc(ui.msg)}</p></details>`;
+  return h;}
+function fileCards(){const t0=total();const stale=t0>0&&(!S.lx||today()-S.lx>7);let h='';
+  h+=`<div class="card"><span class="eyebrow">Lernstand sichern</span><div class="row2" style="margin-bottom:10px"><span class="chip st-${stale?'schwach':S.lx?'sicher':''}">Zuletzt gesichert: ${S.lx?ago(S.lx):'noch nie'}</span><span class="small muted">${S.log.length} Antworten im Protokoll</span></div>
+   <p class="small" style="margin-bottom:12px">Dein Lernstand liegt in diesem Browser. Speichere ihn ab und zu als Datei, zum Beispiel einmal pro Woche. In der Datei stehen alle Antworten, richtige und falsche, und neuere Versionen der App können sie weiterverwenden.</p>
+   <div class="row2"><button class="btn sm" data-act="dl">Fortschritt speichern</button><button class="btn sm ghost" data-act="csv">Als Tabelle (CSV)</button></div>
+   <label class="small muted" for="fileIn" style="display:block;margin-top:14px">Gespeicherte Datei laden</label><input type="file" id="fileIn" accept=".json,application/json" class="small">
+   <p class="small" id="msg" role="status" style="margin-top:8px">${esc(ui.msg)}</p>
+   <details style="margin-top:8px"><summary class="small">Falls das Speichern nicht klappt: als Text</summary><div class="row2" style="margin-top:8px"><button class="btn sm ghost" data-act="exp">Text anzeigen</button>${ui.code?'<button class="btn sm ghost" data-act="copy">Kopieren</button>':''}</div>${ui.code?`<textarea class="code" id="codeOut" readonly aria-label="Lernstand als Text">${esc(ui.code)}</textarea>`:''}<label class="small muted" for="codeIn" style="display:block;margin-top:10px">Text einfügen und laden</label><textarea class="code" id="codeIn" style="min-height:64px" placeholder="Hier einfügen"></textarea><div class="row2" style="margin-top:8px"><button class="btn sm ghost" data-act="imp">Laden</button></div></details></div>`;
+  h+=`<div class="card"><span class="eyebrow">Fehler-Heft</span><p class="small muted" style="margin-bottom:6px">Deine letzten falschen Antworten.</p>${errItems(S.log,10)}${S.log.some(e=>!e.ok&&TOP[e.tp])?'<button class="btn sm ghost" style="margin-top:10px" data-act="errs">Diese Themen nochmal üben</button>':''}</div>`;
+  h+=`<div class="card"><span class="eyebrow">Als App auf den Startbildschirm</span><p class="small" style="margin-bottom:8px"><b>iPhone oder iPad (Safari):</b> Teilen-Symbol antippen, dann „Zum Home-Bildschirm“.</p><p class="small"><b>Android (Chrome):</b> Menü ⋮ öffnen, dann „Zum Startbildschirm hinzufügen“ oder „App installieren“.</p></div>`;
+  h+=`<div class="card"><span class="eyebrow">Fragenpakete</span><p class="small muted" style="margin-bottom:8px">Neue Themen und Fragen kommen als Paket-Datei (.json) dazu. Dein Lernstand bleibt dabei erhalten.</p>
+   ${ABI.packs.length?ABI.packs.map(p=>`<div class="res"><span>${esc(p.name||p.id)} <span class="muted small">(${p.topics.length} Themen, Version ${esc(p.version||'?')})</span></span><button class="btn sm no" data-act="packdel" data-id="${esc(p.id)}">Entfernen</button></div>`).join(''):'<p class="small muted">Noch kein Paket geladen.</p>'}
+   <label class="small muted" for="packIn" style="display:block;margin-top:12px">Paket laden</label><input type="file" id="packIn" accept=".json,application/json" class="small"><p class="small" id="packmsg" role="status" style="margin-top:8px">${esc(ui.packMsg||'')}</p></div>`;
+  h+=`<details class="card"><summary>Für Eltern: Lernstand-Datei ansehen</summary><p class="small muted" style="margin:8px 0 10px">Lass dir die gespeicherte Datei schicken und öffne sie hier. Das ändert nichts am eigenen Lernstand.</p><input type="file" id="viewIn" accept=".json,application/json" class="small">${ui.viewed?`<div style="margin-top:12px">${reportCard(ui.viewed.r,ui.viewed.nm,false,`<span class="eyebrow" style="margin-top:16px">Letzte falsche Antworten</span>${errItems(ui.viewed.log,10)}`)}${ui.viewed.at?`<p class="small muted" style="margin-top:6px">Stand der Datei: ${esc(new Date(ui.viewed.at).toLocaleString('de-DE'))}</p>`:''}</div>`:''}</details>`;
+  h+=`<div class="card"><span class="eyebrow">Über diese App</span><p class="small muted">Abi-Trainer ${esc(APPV)}, Datenformat ${STATE_V}. Updates ersetzen nur die App, der Lernstand in diesem Browser bleibt erhalten, solange die Adresse gleich bleibt.</p>${AUTH?'<button class="btn sm ghost" style="margin-top:10px" data-act="logout">Abmelden</button>':''}</div>`;
+  return h;}
+
+/* ----- Themen-Blatt ----- */
+function topicHtml(id){const t=TOP[id],s=T(id),st=status(s.m);
+  return `<div class="ov"><div class="wrap stack">
+   <div class="stop"><button class="x" data-act="close" aria-label="Zurück">←</button><span class="tag s${t.s}">${subjName(t.s)}</span></div>
+   <div><h2>${esc(t.n)}</h2><p class="muted" style="margin-top:4px">${esc(t.d)}</p></div>
+   <div class="card"><div class="row2" style="justify-content:space-between"><span class="chip st-${st}">${statusLabel[st]}</span><span class="small muted">${s.n?`${s.n} beantwortet, ${Math.round(100*s.r/s.n)} % richtig`:'noch nicht geprüft'}</span></div>
+    <div class="row2" style="margin-top:14px"><button class="btn" data-act="practice" data-id="${id}">5 Aufgaben üben</button><button class="btn ghost" data-act="cards" data-id="${id}">Karten abfragen</button></div></div>
+   <div class="card"><span class="eyebrow">Das Wichtigste</span>${t.cards.map(c=>`<div class="ref"><b>${c[0]}</b>${c[1]}${c[2]?`<div class="tip">${c[2]}</div>`:''}</div>`).join('')}</div>
+   <div class="card"><span class="eyebrow">Erklärvideos</span>${vlinks(t)}</div>
+  </div></div>`;}
+
+/* ----- Übungs-Sitzung ----- */
+function sessHtml(){const s=sess;if(s.i>=s.items.length)return sumHtml();
+  const it=s.items[s.i],t=TOP[it.tid];const pct=Math.round(s.i/s.items.length*100);
+  if(!s.t0)s.t0=Date.now();
+  if(!s.cur&&it.k==='q')s.cur=genQ(it.tid);
+  let h=`<div class="ov"><div class="wrap">
+   <div class="stop"><button class="x" data-act="quit" aria-label="Sitzung beenden">✕</button><div class="bar" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100"><i style="width:${pct}%"></i></div>${s.combo>=2?`<span class="combo" aria-label="Kombo ${s.combo}">${FLAME}×${s.combo}</span>`:''}<span class="cnt">${s.i+1}/${s.items.length}</span></div>
+   <div class="tagrow"><span class="tag s${t.s}">${subjName(t.s)}</span><span class="tn">${esc(t.n)}</span><span class="kind">${it.k==='c'?'Wissenskarte':s.mode}</span></div>`;
+  if(it.k==='c'){const c=t.cards[it.ci];
+    h+=`<div class="qcard s${t.s} pop"><span class="qlab">Frage</span>${c[0]}</div>`;
+    if(!s.rev)h+=`<div style="margin-top:16px"><button class="btn wide" data-act="reveal">Antwort zeigen</button><p class="small muted" style="margin-top:8px;text-align:center">Erst überlegen, dann aufdecken.</p></div>`;
+    else h+=`<div class="qcard card-a s${t.s} pop" style="margin-top:14px"><span class="qlab">Antwort</span>${c[1]}${c[2]?`<div class="tip">${c[2]}</div>`:''}</div><div class="row2" style="margin-top:16px;flex-wrap:nowrap"><button class="btn no wide" data-act="dunno">Nicht gewusst</button><button class="btn wide" data-act="know">Gewusst</button></div>`;
+  }else{const q=s.cur;
+    h+=`<div class="qcard s${t.s}${s.phase==='ask'?' pop':''}">${q.q}</div>`;
+    if(s.phase==='ask'){
+      if(q.mc)h+=`<div class="opts">${q.mc.map((o,i)=>`<button class="opt" data-act="mc" data-id="${i}"><b>${'ABCD'[i]}</b><span>${o}</span></button>`).join('')}</div>`;
+      else h+=`<form id="af" autocomplete="off"><div class="answer-row"><input class="in" id="ans" type="text" inputmode="text" enterkeyhint="done" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Deine Antwort" placeholder="Antwort">${q.unit?`<span class="unit">${esc(q.unit)}</span>`:''}</div>
+        <div class="keys" aria-label="Eingabehilfe"><button type="button" data-act="ins" data-id="−" aria-label="Minus">−</button><button type="button" data-act="ins" data-id="," aria-label="Komma">,</button><button type="button" data-act="ins" data-id="/" aria-label="Bruchstrich">/</button></div>
+        <div class="err" id="err" role="alert"></div><button class="btn wide" type="submit">Prüfen</button></form>`;
+      h+=`<div style="text-align:center;margin-top:6px"><button class="link" data-act="skip">Weiß ich nicht</button></div>`;
+    }else{
+      const L=s.last,skipped=L.given==null;
+      if(q.mc)h+=`<div class="opts">${q.mc.map((o,i)=>`<button class="opt ${i===q.c?'right':(i===L.given?'wrong':'')}" disabled><b>${'ABCD'[i]}</b><span>${o}</span></button>`).join('')}</div>`;
+      const praise=['Richtig!','Stark!','Genau so!','Sauber gerechnet!'][s.results.length%4];
+      h+=`<div class="fb ${L.ok?'ok':'no'} pop" role="status"><div class="fbh">${kobi(L.ok?(s.combo>=3?'cheer':'happy'):'oops',56)}<div><b class="h">${L.ok?praise:skipped?'Das üben wir.':'Fast. Schau mal:'}</b><span class="xp">+${L.gain||0} XP</span>${L.ok&&s.combo>=3?` <span class="xp" style="background:var(--soft);color:var(--ink)">Kombo ×${s.combo}</span>`:''}</div></div>`;
+      if(!q.mc){
+        if(!L.ok&&!skipped)h+=`Deine Antwort: <span class="strike">${esc(L.given)}</span><br>`;
+        h+=`${L.ok?'Lösung':'Richtig wäre'}: <span class="mk">${showNum(q.a)}${q.unit?' '+esc(q.unit):''}</span>`;}
+      if(q.ex)h+=`<div class="ex">${q.ex}</div>`;
+      h+=`</div><button class="btn wide" style="margin-top:16px" data-act="next">${s.i+1>=s.items.length?'Ergebnis ansehen':'Weiter'}</button>`;
+    }}
+  return h+'</div></div>';}
+function sumHtml(){const s=sess;const ok=s.results.filter(r=>r.ok).length,n=s.results.length;
+  const by={};s.results.forEach(r=>{(by[r.tid]=by[r.tid]||{ok:0,n:0}).n++;if(r.ok)by[r.tid].ok++;});
+  const miss=Object.keys(by).filter(k=>by[k].ok<by[k].n);
+  const td=S.h[today()]||{n:0};const L=lvInfo(S.x||0);
+  const good=n>0&&ok/n>=0.6;
+  const msg=n===0?'':ok===n?'Alles richtig. Stark!':good?'Gutes Ergebnis. Die roten Themen kommen bald wieder.':'Genau dafür ist das hier da: Die roten Themen kommen jetzt öfter dran.';
+  return `<div class="ov"><div class="wrap stack"><div class="stop"><button class="x" data-act="quit" aria-label="Schließen">✕</button><span class="tag">${esc(s.mode)}</span></div>
+   <div class="card sumtop">${kobi(n===0?'sleep':ok===n||good?'cheer':'happy',110,true)}<div class="big">${ok} von ${n}</div><p>${msg}</p><span class="xp" style="font-size:1.05rem;padding:7px 14px">+${s.xp} XP</span>
+    <div style="width:100%;margin-top:10px"><div class="bar g"><i style="width:${Math.round(L.p*100)}%"></i></div><p class="small muted" style="margin-top:6px">Level ${L.L}, ${esc(L.title)}${s.lvl?' (neu!)':''}</p></div>
+    ${td.n>=GOAL?'<p class="small" style="color:var(--ok);font-weight:800">Tagesziel erreicht.</p>':`<p class="small muted">Heute insgesamt ${td.n} von ${GOAL}.</p>`}</div>
+   ${s.newB.length?`<div class="card"><span class="eyebrow">Neue Abzeichen</span><div class="badges">${s.newB.map(id=>{const b=BADGES.find(x=>x.id===id);return `<div class="bd"><span class="g">${esc(b.g)}</span><b>${esc(b.n)}</b><small>${esc(b.d)}</small></div>`;}).join('')}</div></div>`:''}
+   <div class="card"><span class="eyebrow">Nach Themen</span>${Object.keys(by).map(k=>`<div class="res"><span>${esc(TOP[k].n)}</span><span class="chip st-${by[k].ok===by[k].n?'sicher':'schwach'}">${by[k].ok}/${by[k].n}</span></div>`).join('')||'<p class="muted small">Keine Antworten.</p>'}</div>
+   ${miss.length?`<div class="card"><span class="eyebrow">Nochmal ansehen</span><div class="grid">${miss.map(k=>tile(TOP[k])).join('')}</div></div>`:''}
+   <div class="row2">${s.mode==='Üben'?`<button class="btn" data-act="again">Noch 5 Aufgaben</button>`:''}<button class="btn ${s.mode==='Üben'?'ghost':'wide'}" data-act="quit">Fertig</button></div></div></div>`;}
+
+/* ----- Rendern ----- */
+function view(){const t=ABI.tabs.find(t=>t.id===ui.tab&&(!t.show||t.show()))||ABI.tabs[0];return t.view();}
+function renderAll(){$('#main').innerHTML=header()+view();$('#nav').innerHTML=navHtml();renderOv();}
+function renderOv(){const ov=$('#ov');
+  ov.innerHTML=sess?sessHtml():ui.topic?topicHtml(ui.topic):'';
+  document.documentElement.classList.toggle('lock',!!(sess||ui.topic));
+  const a=$('#ans');if(a)a.focus({preventScroll:true});}
+
+/* ----- Aktionen ----- */
+function grade(ok,given){const s=sess,it=s.items[s.i],q=s.cur;s.phase='fb';s.last={ok,given};record(it.tid,ok,0.3);s.results.push({tid:it.tid,ok});
+  logAns({k:'q',tp:it.tid,q:plain(q.q),g:given==null?null:q.mc?plain(q.mc[given]):String(given),c:q.mc?plain(q.mc[q.c]):showNum(q.a)+(q.unit?' '+q.unit:''),ok:ok?1:0,sk:given==null?1:0,ms:elapsed()});
+  afterAnswer(ok,'q');if(ok)burst(18);renderOv();}
+function checkNum(){const q=sess.cur,inp=$('#ans');const vals=parseNums(inp.value);
+  if(!vals.length){$('#err').textContent='Bitte eine Zahl eingeben, zum Beispiel 12,5 oder 3/4.';inp.focus();return;}
+  grade(vals.some(v=>Math.abs(v-q.a)<=q.tol),inp.value.trim());}
+function next(){const s=sess;s.i++;s.t0=0;s.cur=null;s.phase='ask';s.rev=false;s.last=null;
+  if(s.i>=s.items.length){checkBadges();save();ABI.emit('session',{mode:s.mode,results:s.results,xp:s.xp});if(s.results.length&&s.results.filter(r=>r.ok).length/s.results.length>=0.6)burst(36);}
+  renderOv();}
+function act(a,d){
+  if(ABI.actions[a]){ABI.actions[a](d);return;}
+  switch(a){
+    case 'tab':ui.tab=d.id;ui.msg='';ui.confirm=false;renderAll();window.scrollTo(0,0);break;
+    case 'filter':ui.filter=d.id;renderAll();break;
+    case 'open':ui.topic=d.id;renderOv();break;
+    case 'close':ui.topic=null;renderAll();break;
+    case 'daily':startDaily();break;
+    case 'check':startCheck(d.id);break;
+    case 'hunt':startHunt();break;
+    case 'practice':startPractice(d.id);break;
+    case 'cards':startCards(d.id);break;
+    case 'again':startPractice(sess.items[0].tid);break;
+    case 'quit':sess=null;renderAll();break;
+    case 'reveal':sess.rev=true;renderOv();break;
+    case 'know':case 'dunno':{const it=sess.items[sess.i];const ok=a==='know';sess.last={ok,given:null};cardResult(it.tid,it.ci,ok);sess.results.push({tid:it.tid,ok});logAns({k:'c',tp:it.tid,ci:it.ci,q:plain(TOP[it.tid].cards[it.ci][0]),ok:ok?1:0,ms:elapsed()});afterAnswer(ok,'c');sess.last=null;next();break;}
+    case 'mc':grade(+d.id===sess.cur.c,+d.id);break;
+    case 'skip':grade(false,null);break;
+    case 'next':next();break;
+    case 'ins':{const i=$('#ans');if(i){const p=i.selectionStart==null?i.value.length:i.selectionStart;i.value=i.value.slice(0,p)+d.id+i.value.slice(i.selectionEnd==null?p:i.selectionEnd);i.focus();const np=p+d.id.length;try{i.setSelectionRange(np,np);}catch(e){}}break;}
+    case 'exp':ui.code=JSON.stringify(toFile());ui.msg='';renderAll();break;
+    case 'dl':{const n='abi-trainer-fortschritt-'+dstr()+'.json';if(saveFile(n,JSON.stringify(toFile(),null,1),'application/json')){S.lx=today();save();ui.msg='Gespeichert als '+n+'. Schau in deinen Downloads oder in der Dateien-App.';}else ui.msg='Speichern wurde blockiert. Nutze unten „als Text“.';renderAll();break;}
+    case 'csv':{const n='abi-trainer-antworten-'+dstr()+'.csv';ui.msg=saveFile(n,csvFile(),'text/csv')?'Tabelle gespeichert als '+n+'.':'Speichern wurde blockiert.';renderAll();break;}
+    case 'errs':{const ids=[...new Set(S.log.filter(e=>!e.ok&&TOP[e.tp]).slice(-30).reverse().map(e=>e.tp))].slice(0,3);if(!ids.length)break;startSess('Fehler-Heft',Array.from({length:6},(_, i)=>({k:'q',tid:ids[i%ids.length]})));break;}
+    case 'copy':{const ta=$('#codeOut'),m=$('#msg');const say=t=>{ui.msg=t;if(m)m.textContent=t;};
+      const fallback=()=>{if(ta){ta.focus();ta.select();}say('Code markiert. Jetzt kopieren (Strg+C oder lange tippen).');};
+      try{navigator.clipboard.writeText(ui.code).then(()=>say('Code kopiert.'),fallback);}catch(e){fallback();}break;}
+    case 'imp':handleFile(($('#codeIn').value||'').trim(),'fileIn');break;
+    case 'pwshow':{const p=$('#pw');if(p)p.type=p.type==='password'?'text':'password';break;}
+    case 'logout':logout();break;
+    case 'packdel':unregisterPack(d.id);savePacks();ui.packMsg='Paket entfernt. Dein bisheriger Lernstand zu diesen Themen bleibt gespeichert.';renderAll();break;
+    case 'reset1':ui.confirm=true;renderAll();break;
+    case 'reset0':ui.confirm=false;renderAll();break;
+    case 'reset2':S=blank();S.u=Date.now();try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}
+      cloud.lastRep='';cloudSchedule();
+      ui.confirm=false;ui.code='';ui.msg='';renderAll();break;
+  }}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(!b)return;act(b.dataset.act,b.dataset);});
+document.addEventListener('submit',e=>{e.preventDefault();if(e.target.id==='af'&&sess)checkNum();if(e.target.id==='gf')tryUnlock();});
+document.addEventListener('change',e=>{const el=e.target;if(!el)return;
+  if(el.id==='nameIn'){S.n=el.value.trim().slice(0,24);save();renderAll();}
+  if(el.id==='packIn'){const f=el.files&&el.files[0];if(!f)return;const rd=new FileReader();
+    rd.onload=()=>{try{const p=JSON.parse(String(rd.result));ABI.registerPack(p);ui.packMsg=`Paket „${p.name||p.id}“ geladen: ${p.topics.length} Themen.`;}catch(err){ui.packMsg='Paket nicht geladen: '+(err&&err.message?err.message:'ungültige Datei')+'.';}renderAll();};
+    rd.onerror=()=>{ui.packMsg='Die Datei konnte nicht gelesen werden.';renderAll();};rd.readAsText(f);el.value='';return;}
+  if(el.id==='fileIn'||el.id==='viewIn'){const f=el.files&&el.files[0];if(!f)return;const mode=el.id;const rd=new FileReader();
+    rd.onload=()=>handleFile(String(rd.result),mode);rd.onerror=()=>{ui.msg='Die Datei konnte nicht gelesen werden.';renderAll();};rd.readAsText(f);el.value='';}});
+document.addEventListener('keydown',e=>{if(e.key==='Enter'&&sess&&sess.phase==='fb'&&sess.items[sess.i]&&document.activeElement.tagName!=='BUTTON'){e.preventDefault();next();}
+  if(e.key==='Escape'){if(sess){sess=null;renderAll();}else if(ui.topic){ui.topic=null;renderAll();}}});
+ABI.registerTab({id:'home',label:'Heute',icon:ICON.home,view:viewHome,order:10});
+ABI.registerTab({id:'topics',label:'Themen',icon:ICON.topics,view:viewTopics,order:20});
+ABI.registerTab({id:'videos',label:'Videos',icon:ICON.videos,view:viewVideos,order:30});
+ABI.registerTab({id:'me',label:'Ich',icon:ICON.me,view:viewMe,order:40});
+ABI.registerTab({id:'parent',label:'Eltern',icon:ICON.parent,view:viewParent,order:45,show:()=>ui.parent});
+loadPacks();
+let booted=false;
+function boot(){renderAll();if(!booted){booted=true;initCloud();ABI.emit('boot');}}
+if(AUTH&&!authOk())showGate();else boot();
+
+</script></body></html>

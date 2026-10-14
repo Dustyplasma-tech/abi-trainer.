@@ -1,0 +1,21 @@
+{
+  "format": "abi-trainer-pack",
+  "schema": 1,
+  "id": "beispiel",
+  "name": "Beispielpaket",
+  "version": "1",
+  "topics": [
+    {
+      "id": "x_beispiel",
+      "s": "M",
+      "n": "Beispielthema",
+      "d": "Ein Muster, wie ein Fragenpaket aufgebaut ist",
+      "g": "★",
+      "cards": [["Was ist 2²?", "4", "Quadrat einer Zahl"]],
+      "questions": [
+        {"q": "Wie viel ist 7 · 8?", "a": 56, "tol": 0, "ex": "7 · 8 = 56"},
+        {"q": "Welche Zahl ist eine Primzahl?", "options": ["9", "11", "15"], "correct": 1, "ex": "11 ist nur durch 1 und 11 teilbar."}
+      ]
+    }
+  ]
+}
